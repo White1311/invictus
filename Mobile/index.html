@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" type="text/css" href="style.css">
+<link href='BebasNeueCyrillic_1.ttf' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">
+    // alert("Yo White, welcome to the new age!");
+
+</script>
+</head>
+<body>
+<div class = "header">
+
+<div>
+    <div class="header_1">
+    <img id = "logotype" src="logo.png">
+    </div>
+<div class="header_2">
+    <div class = "title">
+
+    </div>
+    <div class = "trener">
+    <p>ТВОЙ ЛИЧНЫЙ ТРЕНЕР</p>
+    </div>
+</div>
+
+</div>
+<div class="header_3">
+    <div class = circles>
+        <div id = "inline" onmouseenter="over();" onmouseleave ="out();">
+            <div class = "circle">
+            <a href="#" id = "icon11" onclick="showBlockUp('block_onClick');"> <img id = "icon_1" src="Icon_1.png"></a>
+            </div>
+            <a href="#" onclick="showBlockUp('block_onClick');"><p class = "inline_text">СКАЧАЙ<br> ПРИЛОЖЕНИЕ</p></a>
+            <p id = "long" style="width: 191px; text-align: center; font-size: 16px; font-family: Bebas;margin: auto; display: none; margin-top: 19px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
+        </div>
+        <div id = "inline2" onmouseenter="over2();" onmouseleave ="out2();">
+            <div class = "circle">
+            <a href="#" id = "icon12" onclick="showBlock2Up('block_onClick');"><img id = "icon_2" src="icon_2.png"></a>
+            </div>
+            <a href="#" onclick="showBlock2Up('block_onClick');"><p class = "inline_text">ВЫБЕРИ ПРОГРАММУ С<br> WORKOUT WALL</p></a>
+            <p id = "long2" style="width: 191px; text-align: center; font-size: 16px; font-family: Bebas;margin: auto; display: none; margin-top: 19px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
+        </div>
+        </div>
+        <div class="circles">
+        <div id = "inline3" onmouseenter="over3();" onmouseleave ="out3();">
+            <div class = "circle">
+            <div id="qw">
+            <a href="#" id = "icon13" onclick="showBlock3Up('block_onClick');"><img id = "icon_3" src="icon_3.png"></a></div>
+            </div>
+            <a href="#" onclick="showBlock3Up('block_onClick');"><p class = "inline_text">НАСЛАЖДАЙСЯ<br> ТРЕНИРОВКОЙ</p></a>
+            <p id = "long3" style="width: 191px; text-align: center; font-size: 16px; font-family: Bebas;margin: auto; display: none; margin-top: 19px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
+        </div>
+        <div id = "inline4" onmouseenter="over4();" onmouseleave ="out4();">
+            <div class = "circle">
+            <a href="#" id = "icon14" onclick="showBlock4Up('block_onClick');"><img id = "icon_4" src="icon_4.png"></a>
+            </div>
+            <a href="#" onclick="showBlock4Up('block_onClick');"><p class = "inline_text">ОТСЛЕЖИВАЙ<br> РЕЗУЛЬТАТ</p></a>
+            <p id = "long4" style="width: 191px; text-align: center; font-size: 16px; font-family: Bebas;margin: auto; display: none; margin-top: 19px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
+        </div>
+        <script type="text/javascript">
+        var mq = window.matchMedia("(min-width: 1440px)");
+        if (mq.matches) {
+            function over(){
+            document.getElementById("long").style.display="block"
+            document.getElementById("inline").style.backgroundColor="black"
+            document.getElementById("icon11").innerHTML="<img  src='Icon01.png'>"
+            }
+            function out(){
+            document.getElementById("long").style.display="none"
+            document.getElementById("inline").style.backgroundColor="transparent"
+            document.getElementById("icon11").innerHTML="<img id = 'icon_1'  src='Icon_1.png'>"
+            }
+            function over2(){
+            document.getElementById("long2").style.display="block"
+            document.getElementById("inline2").style.backgroundColor="black"
+            document.getElementById("icon12").innerHTML="<img  src='Icon02.png'>"
+            }
+            function out2(){
+            document.getElementById("long2").style.display="none"
+            document.getElementById("inline2").style.backgroundColor="transparent"
+            document.getElementById("icon12").innerHTML="<img id = 'icon_2'  src='Icon_2.png'>"
+            }
+            function over3(){
+            document.getElementById("long3").style.display="block"
+            document.getElementById("inline3").style.backgroundColor="black"
+            document.getElementById("icon13").innerHTML="<img  src='Icon03.png'>"
+            }
+            function out3(){
+            document.getElementById("long3").style.display="none"
+            document.getElementById("inline3").style.backgroundColor="transparent"
+            document.getElementById("icon13").innerHTML="<img id = 'icon_3'  src='Icon_3.png'>"
+            }
+            function over4(){
+            document.getElementById("long4").style.display="block"
+            document.getElementById("inline4").style.backgroundColor="black"
+            document.getElementById("icon14").innerHTML="<img  src='Icon04.png'>"
+            }
+            function out4(){
+            document.getElementById("long4").style.display="none"
+            document.getElementById("inline4").style.backgroundColor="transparent"
+            document.getElementById("icon14").innerHTML="<img id = 'icon_4'  src='Icon_4.png'>"
+            }
+    }
+            </script>
+    </div>
+</div>
+<div class = "header_4">
+    <BUTTON id = "button" onclick="showPopUp('popup');">НАЧАТЬ</BUTTON>
+    </div>
+<div id="popup">
+    <div class="call_popup">
+    <div class = "x">
+        <a class="close" href="#" onclick="closePopUp('popup');" ><img src="x.png"></a>
+</div>
+    <script type="text/javascript">
+
+    function showPopUp(el) {
+        var cvr = document.getElementById("popup")
+        document.getElementById("block_onClick").style.display="none"
+        cvr.style.display = "block"
+    }
+        function closePopUp(el) {
+        var cvr = document.getElementById("popup")
+        cvr.style.display = "none"
+        document.body.style.overflowY = "scroll"
+    }
+    </script>
+    <div class = "call_01">
+        <p>НАЧНИТЕ ПРЯМО СЕЙЧАС</p>
+    </div>
+    <div class = "call_02">
+        <form>
+            <input class ="input01" type="text" name="field1" placeholder="Имя" />
+            <input class ="input01" type="number" name="field2" placeholder="Номер" />
+            <button class = "submit01">ПОДТВЕРДИТЬ</button>
+        </form>
+    </div>
+</div>
+
+    </div>
+
+<div id="block_onClick">
+        <a id ="close" href="#" onclick="closeUp('block_onClick');"><img src="x.png"></a>
+    <script type="text/javascript">
+    function showBlockUp(el) {
+        var cvr = document.getElementById("block_onClick")
+        document.getElementById("popup").style.display="none"
+        cvr.style.display = "block"
+    }
+        function closeUp(el) {
+        var cvr = document.getElementById("block_onClick")
+        cvr.style.display = "none"
+        document.body.style.overflowY = "scroll"
+    }
+    function showBlock2Up(el) {
+        var cvr = document.getElementById("block_onClick")
+        cvr.style.display = "block"
+        document.getElementById("icon01").style.backgroundImage="url('Icon02.png')"
+        document.getElementById("popup").style.display="none"
+        document.getElementById("h1").innerHTML = 'ВЫБЕРИ ПРОГРАММУ С<br> WORKOUT WALL'
+
+    }
+    function showBlock3Up(el) {
+        var cvr = document.getElementById("block_onClick")
+        cvr.style.display = "block"
+        document.getElementById("icon01").style.backgroundImage="url('Icon03.png')"
+        document.getElementById("popup").style.display="none"
+        document.getElementById("h1").innerHTML = 'НАСЛАЖДАЙСЯ<br> ТРЕНИРОВКОЙ'
+
+    }
+    function showBlock4Up(el) {
+        var cvr = document.getElementById("block_onClick")
+        cvr.style.display = "block"
+        document.getElementById("popup").style.display="none"
+        document.getElementById("icon01").style.backgroundImage="url('Icon04.png')"
+        document.getElementById("h1").innerHTML = 'ОТСЛЕЖИВАЙ<br> РЕЗУЛЬТАТ'
+
+    }
+    </script>
+    <div id = "icon01"></div>
+    <div class = "blabla"> <h1 id = "h1" style="color: white; font-family: Bebas; font-size: 19px; display: block; justify-content: center; text-align: center; padding-top:33px; margin: auto;">СКАЧАЙ ПРИЛОЖЕНИЕ</h1><p style="width: 191px; text-align: center; font-size: 16px; font-family: Bebas;margin: auto; display: block; margin-top: 19px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p></div>
+
+</div>
+    </div>
+    <!-- <div class = "shape">
+        <img class = "shape_in" src="shape.png">
+    </div> -->
+
+</div>
+<div class = "video_block">
+    <div class = "video_block_1">
+        <p>ВИДЕО О ПРИЛОЖЕНИИ</p>
+    </div>
+    <div class = "video_block_2">>
+        <div class = "player">
+            <!-- <video class = "video_preview_m" src="video_preview.png">
+                <source src="video.mp4" type="video">
+            </video> -->
+            <!-- <object class = "video_preview_m" data="https://youtu.be/T6YiBqAmsVo"> </object> -->
+            <iframe class="video_preview_m" src="https://www.youtube.com/embed/T6YiBqAmsVo" frameborder="0" allowfullscreen></iframe></div>
+    </div>
+     <div class = "video_block_3">
+        <div class = "download">
+            <BUTTON class= "download_ios"></BUTTON>
+            <BUTTON class= "download_android"></BUTTON>
+            </div>
+</div>
+</div>
+
+<div class= "block_problems">
+
+    <img  class = "line" src="Line.png">
+    <div class="problems_1">
+        <p>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</p>
+    </div>
+
+    <div class="problems_2">
+        <div class = "screen">
+        <img src="screen.png">
+        </div>
+        <div class ="content_problems">
+                <div class = "first">
+                    <img class = "numbers" src="01.png">
+                    <div class = "blabla">
+                    <p>У МЕНЯ НЕ ХВАТАЕТ ДЕНЕГ НА ТРЕНЕРА</p>
+                    <div id = "box" style="display: none;">As I opened my eyes she turned to one of the warriors, saying, <q>He will live, O Jed." "'Tis well," replied the one so addressed, rising and approaching</q></div>
+                    </div>
+                    <a id="btn_toggle" onclick="showDivUp('box','btn_toggle','btn_toggle2')"><img src ="+.png"></a>
+                    <a id="btn_toggle2" onclick="closeDiv('box','btn_toggle','btn_toggle2')"><img src ="-.png"></a>
+                </div>
+                <img class = "long_line" src="long_line.png">
+
+                <div class = "first">
+                    <img class = "numbers" src="02.png">
+                    <div class = "blabla">
+                    <p>МОЮ ПРОГРАММУ НАПИСАЛИ ДРУЗЬЯ</p>
+                    <div id = "box2" style="display: none;">As I opened my eyes she turned to one of the warriors, saying, <q>He will live, O Jed." "'Tis well," replied the one so addressed, rising and approaching</q></div>
+                    </div>
+                    <a id="btn_toggle3" onclick="showDivUp('box2','btn_toggle3','btn_toggle4')"><img src ="+.png"></a>
+                    <a id="btn_toggle4" onclick="closeDiv('box2','btn_toggle3','btn_toggle4')"><img src ="-.png"></a>
+                </div>
+                <img class = "long_line" src="long_line.png">
+                <div class = "first">
+                    <img class = "numbers" src="03.png">
+                    <div class = "blabla">
+                    <p>Я САМ ВСЕ ЗНАЮ</p>
+                    <div id = "box3" style="display: none;">lorem ipsum</div>
+                    </div>
+                    <a id="btn_toggle5" onclick="showDivUp('box3','btn_toggle5','btn_toggle6')"><img src ="+.png"></a>
+                    <a id="btn_toggle6" onclick="closeDiv('box3','btn_toggle5','btn_toggle6')"><img src ="-.png"></a>
+                </div>
+                <img class = "long_line" src="long_line.png">
+                <div class = "first">
+                    <img class = "numbers" src="04.png">
+                    <div class = "blabla">
+                    <p>Я НЕ ЗНАЮ КАК ПРАВИЛЬНО СОСТАВИТЬ ПРОГРАММУ</p>
+                    <div id = "box4" style="display: none;">lorem ipsum</div>
+                    </div>
+                    <a id="btn_toggle7" onclick="showDivUp('box4','btn_toggle7','btn_toggle8')"><img src ="+.png"></a>
+                    <a id="btn_toggle8" onclick="closeDiv('box4','btn_toggle7','btn_toggle8')"><img src ="-.png"></a>
+                </div>
+                <img class = "long_line" src="long_line.png">
+                <div class = "first">
+                    <img class = "numbers" src="05.png">
+                    <div class = "blabla">
+                    <p>Я ВСЕ ДЕЛАЮ, НО У МЕНЯ НЕТ РЕЗУЛЬТАТА</p>
+                    <div id = "box5" style="display: none;">lorem ipsum</div>
+                    </div>
+                    <a id="btn_toggle9" onclick="showDivUp('box5','btn_toggle9','btn_toggle10')"><img src ="+.png"></a>
+                    <a id="btn_toggle10" onclick="closeDiv('box5','btn_toggle9','btn_toggle10')"><img src ="-.png"></a>
+                </div>
+                <img class = "long_line" src="long_line.png">
+            </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function showDivUp(el,btn,btn2) {
+        var cvr = document.getElementById(el)
+        cvr.style.display = "block"
+        document.getElementById(btn2).style.display = "block"
+        document.getElementById(btn).style.display = "none"
+
+    }
+        function closeDiv(el,btn,btn2) {
+        var cvr = document.getElementById(el)
+        cvr.style.display = "none"
+        document.body.style.overflowY = "scroll"
+        document.getElementById(btn2).style.display = "none"
+        document.getElementById(btn).style.display = "block"
+    }
+
+</script>
+
+<div class="call_to_action">
+    <div class = "call_1">
+        <p>НАЧНИТЕ ПРЯМО СЕЙЧАС</p>
+    </div>
+    <div class = "call_2">
+        <form>
+            <input class ="input" type="text" name="field1" placeholder="Имя" />
+            <input class ="input" type="number" name="field2" placeholder="Номер" />
+            <button class = "submit">ПОДТВЕРДИТЬ</button>
+        </form>
+    </div>
+</div>
+<div class="testimonials">
+    <div class="test_1">
+        <img  class = "otzivy_img" src="otzivy.png">
+        <img class = "otzivy">
+        <p>ВЫ ПРОСТО СПАСЛИ МОЮ ЖИЗНЬ! ЭТО БЕЗУМНО УДОБНО! ОБОЖАЮ ВАШЕ ПРИЛОЖЕНИЕ!</p>
+
+    </div>
+    <div class = "test_2">
+    <ul class="slides">
+    <li class="nav-dots">
+      <label  for = "customer1" onclick="change();" class="nav-dot" id="img-dot-1"></label>
+      <label for = "customer2" onclick="change2();" class="nav-dot" id="img-dot-2"></label>
+      <label  for = "customer3" onclick="change3();" class="nav-dot" id="img-dot-3"></label>
+    </li>
+    </ul>
+    </div>
+    <div class="test_3">
+    <div class = "customers">
+    <div id ="customer1" onclick="change();">
+    <img id = "user_image1" src="user_m.png">
+    <div class = "other">
+    <p id = "name">Александр</p>
+    <img id = "fb" src="facebook.png">
+    </div>
+    </div>
+    <div id="customer2" onclick="change2();">
+    <img id = "user_image2" src="user_m.png">
+    <div class = "other">
+    <p id = "name2">Александр</p>
+    <img id = "fb2" src="facebook.png">
+    </div>
+    </div>
+    <div id ="customer3" onclick="change3();">
+    <img id = "user_image3" src="user_m.png">
+    <div class = "other">
+    <p id = "name3">Александр</p>
+    <img id = "fb3" src="facebook.png">
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        function change2(){
+            document.getElementById("user_image1").style.opacity = "0.5"
+            document.getElementById("user_image2").style.opacity = "1"
+            document.getElementById("user_image3").style.opacity = "0.5"
+            document.getElementById("fb").style.opacity = "0.5"
+            document.getElementById("fb3").style.opacity = "0.5"
+            document.getElementById("fb2").style.opacity = "1"
+            document.getElementById("name").style.opacity = "0.5"
+            document.getElementById("name2").style.opacity = "1"
+            document.getElementById("name3").style.opacity = "0.5"
+            document.getElementById("img-dot-1").style.opacity = "0.5"
+            document.getElementById("img-dot-2").style.opacity = "1"
+            document.getElementById("img-dot-3").style.opacity = "0.5"
+        }
+        function change(){
+            document.getElementById("user_image1").style.opacity = "1"
+            document.getElementById("user_image2").style.opacity = "0.5"
+            document.getElementById("user_image3").style.opacity = "0.5"
+            document.getElementById("fb").style.opacity = "1"
+            document.getElementById("fb3").style.opacity = "0.5"
+            document.getElementById("fb2").style.opacity = "0.5"
+            document.getElementById("name").style.opacity = "1"
+            document.getElementById("name2").style.opacity = "0.5"
+            document.getElementById("name3").style.opacity = "0.5"
+            document.getElementById("img-dot-1").style.opacity = "1"
+            document.getElementById("img-dot-2").style.opacity = "0.5"
+            document.getElementById("img-dot-3").style.opacity = "0.5"
+        }
+        function change3(){
+            document.getElementById("user_image1").style.opacity = "0.5"
+            document.getElementById("user_image2").style.opacity = "0.5"
+            document.getElementById("user_image3").style.opacity = "1"
+            document.getElementById("fb").style.opacity = "0.5"
+            document.getElementById("fb3").style.opacity = "1"
+            document.getElementById("fb2").style.opacity = "0.5"
+            document.getElementById("name").style.opacity = "0.5"
+            document.getElementById("name2").style.opacity = "0.5"
+            document.getElementById("name3").style.opacity = "1"
+            document.getElementById("img-dot-1").style.opacity = "0.5"
+            document.getElementById("img-dot-2").style.opacity = "0.5"
+            document.getElementById("img-dot-3").style.opacity = "1"
+        }
+    </script>
+    </div>
+</div>
+<div class="instructions">
+    <div class="instructions1">
+    <img class = "shape_m" src="shape_m.png">
+    <img class = "device" src="device_m.png">
+    </div>
+    <div class = "width">
+    <div class = "instructions2">
+    <p>НЕ ЗНАЕТЕ КАК ПОЛЬЗОВАТЬСЯ ПРИЛОЖЕНИЕМ?</p>
+    </div>
+    <div class = "instruction3">
+    <button>СКАЧАТЬ ИНСТРУКЦИЮ</button>
+    </div>
+    </div>
+
+</div>
+<div class="call_to_action2">
+    <div class = "together">
+    <div class = "call_3">
+        <p>НАЧНИТЕ ПРЯМО СЕЙЧАС</p>
+    </div>
+    <div class = "call_4">
+        <form>
+            <input class ="input12" type="text" name="field1" placeholder="Имя" />
+            <input class ="input12" type="number" name="field2" placeholder="Номер" />
+            <button class = "submit12">ПОДТВЕРДИТЬ</button>
+        </form>
+    </div>
+    </div>
+</div>
+<div class="footer">
+<!-- <p>FOOTER</p> -->
+</div>
+</body>
+</html>

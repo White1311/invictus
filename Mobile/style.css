@@ -1,0 +1,2234 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration:none;
+}
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+.header_1{
+    order: 1;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+.header_2{
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.header_3{
+    order: 3;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-flow: column;
+    margin-top: 10px;
+    order: 1;
+    margin-bottom: 33px;
+}
+@media only screen and (min-width: 768px){
+    .header_3{
+        display: flex;
+        flex-flow: row;
+        margin-top: 37px;
+        width: 710px;
+
+    }
+}
+@media only screen and (min-width: 1440px){
+    .header_3{
+        display: flex;
+        flex-flow: row;
+        margin-top: 37px;
+        width: 1070px;
+
+    }
+}
+.header_4{
+    display:flex;
+    flex-flow: column;
+    margin: auto;
+    order: 4;
+    position: static;
+    margin-top: 0px;
+    height: 90px;
+    justify-content: center;
+}
+@media only screen and (min-width: 768px){
+    .header_4{
+        margin-top: 35px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .header_4{
+        margin-top: 99px;
+    }
+}
+
+@font-face { font-family: Bebas; src: url('BebasNeueCyrillic_1.ttf'); }
+.header{
+    opacity: 100%;
+    height: 950px;
+    max-width: 100%;
+    width: 100%;
+    background-image: url("back.jpg");
+    background-size:cover;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+@media only screen and (min-width: 768px){
+    .header{
+        background-image: url("back_t.png");
+        height: 800px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .header{
+        height: 980px;
+        background-image: url("back_desktop.png");
+    }
+}
+/*img,object,embed,video{
+    max-width: 100%;
+}*/
+p {
+    font-family: Bebas;
+    text-align: center;
+    color: white;
+}
+.title{
+    width: 230px;
+    margin: auto;
+    margin-top: 69px;
+    font-family: Bebas;
+    position: relative;
+    flex-flow: row;
+    display: block;
+    text-align: center;
+    display: block;
+    text-align: justify;
+    height: 30px;
+    background-image: url("iam_invictus.svg");
+}
+@media only screen and (min-width: 768px){
+    .title{
+        margin-top: 109px;
+        background-image: url("iam_invictus_for_t.png");
+        width: 438px;
+        height: 47px;
+    }
+}
+#logotype{
+    position: relative;
+    margin: auto;
+    margin-top: 37px;
+
+}
+@media only screen and (min-width: 768px){
+    #logotype{
+        margin-left:49px;
+    }
+}
+
+
+.trener{
+    display: block;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 40%;
+    font-size:22px;
+    position: relative;
+    height: 21px;
+    margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px){
+    .trener{
+        height: 29px;
+        font-size: 29px;
+        text-align: center;
+        text-align: justify;
+    }
+    .trener p{
+        display: block;
+        margin:auto;
+        width: 169px;
+        margin-top: 27px;
+    }
+
+}
+
+.circles{
+    display: block;
+    color: white;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row;
+    margin-top: 49px;
+}
+@media only screen and (min-width: 768px){
+    .circles{
+        font-size: 21px;
+    }
+}
+
+.circle{
+    background-image: url("Border_1.png");
+    width: 105px;
+    height: 105px;
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    padding: auto;
+}
+.circle img{
+
+    display: block;
+    margin: auto;
+    padding-top:25px;
+}
+@media only screen and (min-width: 1440px){
+    .circle{
+        background-image: none;
+        width: 150px;
+        height: 150px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    #icon_1{
+        content: url("Icon11.png");
+        width: 150px;
+        height: 150px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    #icon_2{
+        content: url("Icon12.png");
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    #icon_3{
+        content: url("Icon13.png");
+    }
+}
+
+
+@media only screen and (min-width: 1440px){
+    #icon_4{
+        content: url("Icon14.png");
+    }
+}
+.text{
+    margin: 5px;
+    align-items: center;
+}
+
+.p{
+    text-align: center;
+    font-weight: normal;
+}
+
+#inline{
+    background-color: transparent;
+    flex-flow: column;
+    display: flex;
+    width: 50%;
+    font-family: Bebas;
+    margin: auto;
+    font-size:19px;
+    padding: auto;
+    margin-top:0px;
+}
+#inline2{
+    background-color: transparent;
+    flex-flow: column;
+    display: flex;
+    width: 50%;
+    font-family: Bebas;
+    margin: auto;
+    font-size:19px;
+    padding: auto;
+    margin-top:0px;
+}
+#inline3{
+    background-color: transparent;
+    flex-flow: column;
+    display: flex;
+    width: 50%;
+    font-family: Bebas;
+    margin: auto;
+    font-size:19px;
+    padding: auto;
+    margin-top:0px;
+}
+#inline4{
+    background-color: transparent;
+    flex-flow: column;
+    display: flex;
+    width: 50%;
+    font-family: Bebas;
+    margin: auto;
+    font-size:19px;
+    padding: auto;
+    margin-top:0px;
+}
+.inline_text{
+    width: 173px;
+    display: block;
+    margin:auto;
+    margin-top: 17px;
+    font-family: Bebas;
+    font-size: 19px;
+}
+@media only screen and (min-width: 768px){
+    .inline_text{
+        font-size: 19px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .inline_text{
+        font-size: 23px;
+        margin-top: 49px;
+    }
+}
+@media only screen and (min-width: 768px){
+    #inline{
+        font-size: 21px;
+    }
+}
+@media only screen and (min-width: 768px){
+    #inline{
+
+        font-size: 21px;
+    }
+}
+#button{
+    font-family: Bebas;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    background-image: url("btn.png");
+    position: relative;
+    min-width: 48px;
+    min-height: 48px;
+    display: block;
+    text-align: center;
+    width: 230px;
+    height: 60px;
+    margin: auto;
+    border-width: 0;
+    margin-top: 0px;
+}
+.shape_in{
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+    margin-left: 180px;
+}
+.video_block{
+    background-color: black;
+    width: 100%;
+    height: 650px;
+}
+@media only screen and (min-width: 768px){
+    .video_block{
+        height: 800px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .video_block{
+        height: 1011px;
+    }
+}
+.video_block_1{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    text-align: center;
+    margin:auto;
+    text-align: justify;
+    font-family: Bebas;
+    font-size: 37px;
+    padding-top: 39px;
+}
+
+
+.video_block_2{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    text-align: center;
+    margin:auto;
+    text-align: justify;
+}
+.video_block_3{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    text-align: center;
+    margin:auto;
+    text-align: justify;
+}
+@media only screen and (min-width: 768px){
+    .video_block_3{
+        margin-top: 33px;
+        display: flex;
+        flex-flow: row;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .video_block_3{
+        margin-top: 33px;
+        display: flex;
+        flex-flow: row;
+    }
+}
+.video_preview_m{
+    display: flex;
+    margin: auto;
+    width: 320px;
+    height: 192px;
+    border-width: 0px;
+}
+
+@media only screen and (min-width: 768px){
+    .video_preview_m {
+        width: 650px;
+        height: 391px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px){
+    .video_preview_m {
+        width: 1001px;
+        height: 599px;
+    }
+}
+.player{
+    position: relative;
+    display: block;
+    margin: auto;
+    align-items: center;
+    height: 221px;
+    width: 100%;
+}
+@media only screen and (min-width: 768px){
+    .player{
+        height: 391px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .player{
+        height: 600px;
+    }
+}
+.video_preview{
+    width: 324px;
+    height: 216px;
+    position: relative;
+    padding-top: 0px;
+    align-items: center;
+    display: block;
+    margin: auto;
+}
+.video_player{
+    margin: auto;
+    display: block;
+}
+.iPhone{
+    position: relative;
+    width: 238,72px;
+    height: 199,56px;
+    top: -113px;
+    margin-left: 207px;
+}
+.download{
+    display: block;
+    margin:auto;
+    width: 230px;
+    height: 140px;
+}
+@media only screen and (min-width: 768px){
+    .download{
+        display: flex;
+        flex-flow: row;
+        width: 490px;
+        height: 60px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .download{
+        width: 490px;
+        height: 60px;
+        display: flex;
+        flex-flow: row;
+    }
+}
+.download_ios{
+    background-image: url("download_ios.png");
+    background-color: black;
+    margin: auto;
+    border: 2px;
+    width: 230px;
+    height: 60px;
+    display: block;
+    margin-top: 11px;
+}
+.download_android{
+    background-image: url("download_android.png");
+    background-color: black;
+    margin: auto;
+    border: 2px;
+    width: 230px;
+    height: 60px;
+    display: block;
+    margin-top: 19px;
+}
+@media only screen and (min-width: 768px){
+    .download_android{
+        margin-top:11px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .download_android{
+        margin-top:11px;
+    }
+}
+.block_problems{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    height: 1067px;
+    width: 100%;
+    background-color: black;
+}
+
+.line{
+    width: 100%;
+    height: 107px;
+    background-color: black;
+    position: relative;
+}
+
+.problems_1{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    font-size: 33px;
+    margin-top: 30px;
+    display: block;
+    margin: auto;
+    top: 11px;
+}
+.problems_1 p{
+    margin:auto;
+    width: 270px;
+}
+@media only screen and (min-width: 768px){
+    .problems_1 p{
+        width:100%;
+    }
+}
+.problems_2{
+    width: 100%;
+    margin-top:53px;
+    height: 760px;
+    display: block;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    position: relative;
+    font-family: Bebas;
+    font-size: 29px;
+}
+@media only screen and (min-width: 1440px){
+    .problems_2{
+        display: flex;
+        flex-flow: row;
+    }
+}
+.screen{
+    background-image: url("Light.png");
+    display: none;
+    margin: auto;
+    width: 313px;
+    height: 543px;
+    margin-top: 23px;
+}
+.screen img{
+    margin:auto;
+    width: 295px;
+    height: 525px;
+    display: none;
+    margin-top:13px;
+    margin-left: 12px;
+}
+@media only screen and (min-width: 1440px){
+    .screen{
+        display: block;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .screen img{
+
+        display: block;
+    }
+}
+.numbers{
+    height: 40px;
+    size: 30px;
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 11px;
+}
+.long_line{
+    position: relative;
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+#box{
+    display: block;
+    color: white;
+    margin:auto;
+    font-family: Bebas;
+    font-size: 21px;
+    opacity: 69%;
+    width: 199px;
+    margin-top: 11px;
+}
+@media only screen and (min-width: 768px){
+    #box{
+        width: 470px;
+    }
+}
+#box2{
+    display: block;
+    color: white;
+    margin:auto;
+    font-family: Bebas;
+    font-size: 21px;
+    opacity: 69%;
+    width: 199px;
+    margin-top: 11px;
+}
+@media only screen and (min-width: 768px){
+    #box2{
+        width: 470px;
+    }
+}
+#box3{
+    display: block;
+    color: white;
+    margin:auto;
+    font-family: Bebas;
+    font-size: 21px;
+    opacity: 69%;
+    width: 199px;
+    margin-top: 11px;
+}
+@media only screen and (min-width: 768px){
+    #box3{
+        width: 470px;
+    }
+}
+#box4{
+    display: block;
+    color: white;
+    margin:auto;
+    font-family: Bebas;
+    font-size: 21px;
+    opacity: 69%;
+    width: 199px;
+    margin-top: 11px;
+}
+@media only screen and (min-width: 768px){
+    #box4{
+        width: 470px;
+    }
+}
+#box5{
+    display: block;
+    color: white;
+    margin:auto;
+    font-family: Bebas;
+    font-size: 21px;
+    opacity: 69%;
+    width: 199px;
+    margin-top: 11px;
+}
+@media only screen and (min-width: 768px){
+    #box5{
+        width: 470px;
+    }
+}
+.blabla{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+.first{
+    height: 77px;
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row;
+}
+@media only screen and (min-width: 768px){
+    .first{
+        width: 757px;
+    }
+}
+.first p{
+    position: relative;
+    width: 215px;
+    margin: auto;
+    display: block;
+    opacity: 100%;
+}
+@media only screen and (min-width: 768px){
+    .first p{
+        width: 470px;
+    }
+}
+.content_problems{
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 11px;
+}
+
+@media only screen and (min-width: 768px){
+    .content_problems{
+        margin-top: 33px;
+        width: 757px;
+
+    }
+}
+#btn_toggle{
+    display: block;
+    width: 37px;
+    height: 36px;
+    margin:auto;
+    margin-top: 11px;
+    background-color: black;
+    border-width: 0;
+}
+
+#btn_toggle2{
+    display: none;
+    width: 37px;
+    height: 36px;
+    margin:auto;
+    margin-top: 11px;
+    background-image: url("-.png") no-repeat;
+}
+#btn_toggle3{
+    display: block;
+    width: 37px;
+    height: 36px;
+    margin:auto;
+    margin-top: 11px;
+    background-color: black;
+    border-width: 0;
+}
+
+#btn_toggle4{
+    display: none;
+    width: 37px;
+    height: 36px;
+    margin:auto;
+    margin-top: 11px;
+    background-image: url("-.png") no-repeat;
+}
+#btn_toggle5{
+    display: block;
+    width: 37px;
+    height: 36px;
+    margin:auto;
+    margin-top: 11px;
+    background-color: black;
+    border-width: 0;
+}
+
+#btn_toggle6{
+    display: none;
+    width: 37px;
+    height: 36px;
+    margin:auto;
+    margin-top: 11px;
+    background-image: url("-.png") no-repeat;
+}
+#btn_toggle7{
+    display: block;
+    width: 37px;
+    height: 36px;
+    margin:auto;
+    margin-top: 11px;
+    background-color: black;
+    border-width: 0;
+}
+
+#btn_toggle8{
+    display: none;
+    width: 37px;
+    height: 36px;
+    margin:auto;
+    margin-top: 11px;
+    background-image: url("-.png") no-repeat;
+}
+#btn_toggle9{
+    display: block;
+    width: 37px;
+    height: 36px;
+    margin:auto;
+    margin-top: 11px;
+    background-color: black;
+    border-width: 0;
+}
+
+#btn_toggle10{
+    display: none;
+    width: 37px;
+    height: 36px;
+    margin:auto;
+    margin-top: 11px;
+    background-image: url("-.png") no-repeat;
+}
+.call_to_action{
+    display: flex;
+    flex-flow: column;
+    background-size:cover;
+    margin: auto;
+    background-image: url("back_call.png");
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: black;
+}
+@media only screen and (min-width: 768px){
+    .call_to_action{
+        background-image: url("back_call_tab.png");
+}
+}
+@media only screen and (min-width: 1440px){
+    .call_to_action{
+        background-image: url("back_call_desk.png");
+}
+}
+
+.call_1{
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 21px;
+    font-size: 29px;
+}
+@media only screen and (min-width: 768px){
+    .call_1{
+        font-size: 29px;
+        top: 23px;
+}
+}
+@media only screen and (min-width: 1440px){
+    .call_1{
+        font-size: 35px;
+        top: 55px;
+}
+}
+.call_1 p{
+    display: block;
+    margin: auto;
+    margin-top: 21px;
+}
+.call_2{
+    display: flex;
+    width: 100%;
+    height: 180px;
+    flex-flow: column;
+    margin: auto;
+    display: flex;
+}
+@media only screen and (min-width: 1440px){
+    .call_2{
+        display: flex;
+        flex-flow: row;
+        height: 50px;
+}
+}
+
+.call_2 form{
+    display: block;
+    margin: auto;
+    margin-top: -49px;
+}
+@media only screen and (min-width: 1440px){
+    .call_2 form{
+        margin-top:-69px;
+}
+}
+.call_2 input {
+    display:block;
+    margin:auto;
+    width: 243px;
+    height: 49px;
+    border:0;
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: Bebas;
+    position: relative;
+    background-color: white;
+    border-radius: 40px;
+    text-align: center;
+}
+@media only screen and (min-width: 1440px){
+    .call_2 input{
+        display: inline-block;
+        margin: 9px;
+        flex-flow: row;
+        position: relative;
+
+}
+}
+.input{
+    position: relative;
+    width: 221px;
+}
+.submit{
+    background-color:#BC4830;
+    border-radius: 40px;
+    height: 49px;
+    width: 243px;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    font-family: Bebas;
+    font-size: 19px;
+    border-width: 0px;
+    color:white;
+}
+.testimonials{
+    width: 100%;
+    height: 395px;
+    position: relative;
+    background-color: black;
+}
+
+@media only screen and (min-width: 768px){
+        .testimonials{
+            height: 666px;
+    }
+}
+.otzivy_img{
+    padding-top: 55px;
+    width: 310px;
+    position: relative;
+    height: 85px;
+    display: flex;
+    margin: auto;
+}
+
+@media only screen and (min-width: 768px){
+    .otzivy_img{
+    content: url("otzivy_tablet.png");
+    width: 660px;
+    position: relative;
+    height: 182px;
+    display: flex;
+    margin: auto;
+    padding-top: 199px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .otzivy_img{
+    content: url("otzivy_desktop.png");
+    width: 1287px;
+    position: relative;
+    height: 353px;
+    display: flex;
+    margin: auto;
+    padding-top: 155px;
+    }
+}
+
+.testimonials form{
+    display: block;
+    margin: auto;
+
+    text-align: justify;
+    position: relative;
+}
+.test_2{
+    display: inline-block;
+    margin: auto;
+    position: relative;
+}
+.test_1 p{
+    text-align: center;
+    margin:auto;
+    display: block;
+    font-family: Bebas;
+    font-size: 25px;
+    margin-top: -33px;
+    width: 277px;
+    font-size: cover;
+}
+@media only screen and (min-width: 768px){
+    .test_1 p{
+        width: 550px;
+        font-size: 25px;
+        margin-top: -89px;
+
+    }
+}
+@media only screen and (min-width: 1440px){
+    .test_1 p{
+        width: 1000px;
+        font-size: 39px;
+        margin-top: -109px;
+    }
+}
+.testimonials input[type="radio"]{
+    display: inline-flex;
+    margin: auto;
+    color: white;
+    height: 8px;
+    border-width: 3px;
+}
+
+.otzivy{
+    display: none;
+    margin: auto;
+    height: 159px;
+    font-size: 33px;
+    width: 77%;
+    background-size:cover;
+    text-align: center;
+}
+@media screen and (min-width: 768px){
+    .otzivy{
+        display: block;
+        content: url("kov_tablet.png");
+        background-size:cover;
+        margin-top: -199px;
+        height: 139px;
+
+    }
+}
+@media only screen and (min-width: 1440px){
+    .otzivy{
+        content: url("kovichki_desktop.png");
+        margin: auto;
+        display: block;
+        margin-top: -333px;
+        height: 170px;
+
+    }
+}
+#user_image1{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    opacity: 1;
+}
+#user_image2{
+    opacity: 0.5;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+#user_image3{
+    opacity: 0.5;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+@media only screen and (min-width: 768px){
+    #user_image1{
+        width: 80px;
+        height: 80px;
+        content: url("Userpic.png");
+    }
+}
+@media only screen and (min-width: 768px){
+    #user_image2{
+        width: 80px;
+        height: 80px;
+        content: url("Userpic2.png");
+    }
+}
+@media only screen and (min-width: 768px){
+    #user_image3{
+        width: 80px;
+        height: 80px;
+        content: url("Userpic3.png");
+    }
+}
+#fb{
+    opacity: 1;
+    width: 8px;
+    height: 15px;
+    display: block;
+    margin: auto;
+}
+#fb2{
+    opacity: 0.5;
+    width: 8px;
+    height: 15px;
+    display: block;
+    margin: auto;
+}
+#fb3{
+    opacity: 0.5;
+    width: 8px;
+    height: 15px;
+    display: block;
+    margin: auto;
+}
+.test_2{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    top: 9px;
+}
+@media only screen and (min-width: 768px){
+    .test_2{
+        top: 39px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .test_2{
+        top: 43px;
+    }
+}
+.test_3{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    margin-top: 49px;
+    float: center;
+}
+.customers{
+    width: 300px;
+    display: flex;
+    margin: auto;
+}
+@media only screen and (min-width: 768px){
+    .customers{
+        width: 625px;
+        margin-top: 55px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .customers{
+        width: 900px;
+        margin-top: 75px;
+    }
+}
+#customer1{
+    margin-top: 33px;
+    float: center;
+    font-family: Bebas;
+    font-size: 13px;
+    display: inline-block;
+    margin: auto;
+    width: 80px;
+    height: 100px;
+    background-size:cover;
+}
+
+#customer2{
+    opacity: 30%;
+    margin-top: 33px;
+    float: center;
+    font-family: Bebas;
+    font-size: 13px;
+    display: inline-block;
+    margin: auto;
+    width: 80px;
+    height: 100px;
+    background-size:cover;
+}
+#customer3{
+    background-size:cover;
+    opacity: 30%;
+    margin-top: 33px;
+    float: center;
+    font-family: Bebas;
+    font-size: 13px;
+    display: inline-block;
+    margin: auto;
+    width: 80px;
+    height: 100px;
+}
+@media only screen and (min-width: 768px){
+    .customer1{
+        display: inline-flex;
+        flex-flow: row;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .other{
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+        padding-left: 9px;
+    }
+}
+#name{
+    opacity: 1;
+}
+#name2{
+    opacity: 0.5;
+}
+#name3{
+    opacity: 0.5;
+}
+.instructions{
+    display: flex;
+    flex-flow: column;
+    height: 550px;
+    width: 100%;
+    background-color: black;
+}
+@media only screen and (min-width: 768px){
+    .instructions1{
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px){
+    .instructions{
+        background-image: url("Instructions_background_tablet.png") no-repeat;
+        background-size: cover;
+        height: 404px;
+    }
+}
+@media only screen and (min-width:768px){
+    .instructions{
+        height: 500px;
+    }
+}
+.shape_m{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 99px;
+    padding-top: 169px;
+}
+@media only screen and (min-width: 768px){
+    .shape_m{
+        order: 1
+        content: url("shape_tab.png");
+        padding-top: 0;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .shape_m{
+        order: 1;
+        content: url("shape_desktop.png");
+        padding-top: 0;
+        margin-top:0;
+    }
+}
+.device{
+    display: block;
+    width: 120px;
+    height: 280px;
+    margin: auto;
+    margin-top: -247px;
+}
+@media only screen and (min-width: 768px){
+    .device{
+        width: 172px;
+        height: 404px;
+        content: url("device_tab.png");
+        order: 2
+        float: left;
+        margin-top: -69px;
+        margin-left: 33px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .device{
+        order: 2;
+        content: url("device_desktop.png");
+        height: 500px;
+        width: 213px;
+        float: left;
+        margin-top: -93px;
+        margin-left: 255px;
+        padding-top: 0;
+    }
+}
+
+.instructions2 p{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    margin-top: 33px;
+    font-family: Bebas;
+    font-size: 27px;
+    width: 347px;
+    height: 100px;
+}
+@media only screen and (min-width: 768px){
+    .instructions2 p{
+        width: 445px;
+        height: 50px;
+        font-size: 29px;
+        float: right;
+        margin-left: 300px;
+        margin-top: -155px;
+
+    }
+}
+@media only screen and (min-width: 1440px){
+    .instructions2 p{
+        width: 445px;
+        height: 50px;
+        font-size: 29px;
+        float: right;
+        margin-left: 666px;
+        margin-top: -255px;
+
+    }
+}
+.instruction3 button{
+    display: block;
+    margin: auto;
+    color: white;
+    font-size: 21px;
+    font-family: Bebas;
+    background-color: black;
+    border-color: white;
+    height: 60px;
+    width: 250px;
+    border-width: 1px;
+}
+@media only screen and (min-width: 768px){
+    .instruction3 button{
+        margin-top: -89px;
+        margin-left:  411px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .instruction3 button{
+        margin-top: -169px;
+        margin-left:  750px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .instructions1{
+        display: flex;
+        flex-flow: column;
+    }
+
+}
+@media only screen and (min-width: 768px){
+    .instructions2{
+        display: flex;
+        flex-flow: column;
+    }
+}
+@media only screen and (min-width: 768px){
+    .instruction3{
+        display: flex;
+        flex-flow: column;
+        position: static;
+    }
+}
+@media only screen and (min-width: 768px){
+    .width{
+        width: 70%;
+        display: flex;
+        flex-flow: column;
+        margin-top: -69px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .width{
+        width: 70%;
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+.call_to_action2{
+    background-image: url("call-mobile.jpg");
+    background-size: cover;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+@media only screen and (min-width: 768px){
+    .call_to_action2{
+        background-image: url("call_tab.png");
+        height: 400px;
+}
+}
+@media only screen and (min-width: 1440px){
+    .call_to_action2{
+        background-image: url("call_desk.png");
+        height: 230px;
+        display: inline-flex;
+        flex-flow: row;
+
+}
+}
+@media only screen and (min-width: 1440px){
+    .together{
+        margin: auto;
+        display: inline-flex;
+        flex-flow: row;
+
+}
+}
+.call_3{
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 21px;
+    font-size: 29px;
+}
+@media only screen and (min-width: 768px){
+    .call_3{
+        font-size: 29px;
+        top: 23px;
+}
+}
+@media only screen and (min-width: 1440px){
+    .call_3{
+        font-size: 29px;
+        top: 0;
+}
+}
+.call_3 p{
+    display: block;
+    margin: auto;
+    padding-top: 21px;
+}
+
+
+@media only screen and (min-width: 768px){
+    .call_3 p{
+        margin: auto;
+        width: 226px;
+        height: 50px;
+        padding-top: 49px;
+}
+}
+@media only screen and (min-width: 1440px){
+    .call_3 p{
+        margin: auto;
+        width: 226px;
+        height: 50px;
+        display: inline-flex;
+        flex-flow: row;
+        margin-top: -21px;
+}
+}
+.call_4{
+    display: flex;
+    width: 100%;
+    height: 180px;
+    flex-flow: column;
+    margin: auto;
+    display: flex;
+    margin-top: 89px;
+}
+@media only screen and (min-width: 768px){
+    .call_4{
+        margin-top: 11px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .call_4{
+        display: flex;
+        flex-flow: row;
+        height: 50px;
+}
+}
+
+.call_4 form{
+    display: block;
+    margin: auto;
+    margin-top: -49px;
+}
+@media only screen and (min-width: 768px){
+    .call_4 form{
+        margin-top:23px;
+}
+}
+@media only screen and (min-width: 1440px){
+    .call_4 form{
+        margin-top:-11px;
+        margin-left: 13px;
+}
+}
+.call_4 input {
+    display:block;
+    margin:auto;
+    width: 243px;
+    height: 49px;
+    border:0;
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: Bebas;
+    position: relative;
+    background-color: white;
+    border-radius: 40px;
+    text-align: center;
+}
+@media only screen and (min-width: 1440px){
+    .call_4 input{
+        margin-top: 0;
+        display: inline-block;
+        flex-flow: row;
+        margin-top: 33px;
+        height: 50px;
+        margin: 9px;
+        flex-flow: row;
+        position: relative;
+
+}
+}
+.input12{
+    position: relative;
+    width: 221px;
+}
+.submit12{
+    background-color:#BC4830;
+    border-radius: 40px;
+    height: 49px;
+    width: 243px;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    font-family: Bebas;
+    font-size: 19px;
+    border-width: 0px;
+    color:white;
+}
+#popup{
+    margin: auto;
+    display: none;
+    margin-top: -859px;
+    order: 5;
+}
+@media only screen and (min-width: 768px){
+    #popup{
+        margin-top: -699px;
+}
+}
+@media only screen and (min-width: 1440px){
+    #popup{
+        margin-top: -833px;
+}
+}
+.call_popup{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    background-image: url("call-mobile.jpg");
+    width: 340px;
+    height: 400px;
+    position: relative;
+}
+
+
+@media only screen and (min-width: 768px){
+    .call_popup{
+        width: 500px;
+        background-image: url("call_tab.png");
+        height: 400px;
+}
+}
+@media only screen and (min-width: 1440px){
+    .call_popup{
+        width: 768px;
+        background-image: url("call_desk.png");
+        height: 400px;
+}
+}
+.call_01{
+    display: block;
+    margin: auto;
+    position: relative;
+    font-size: 29px;
+}
+@media only screen and (min-width: 768px){
+    .call_01{
+        font-size: 33px;
+        top: -17px;
+}
+}
+@media only screen and (min-width: 1440px){
+    .call_01{
+        font-size: 33px;
+        top: 0;
+}
+}
+.call_01 p{
+    display: block;
+    margin: auto;
+    padding-top: 21px;
+}
+
+@media only screen and (min-width: 768px){
+    .call_01 p{
+        margin: auto;
+        width: 280px;
+        height: 50px;
+        padding-top: 0px;
+}
+}
+@media only screen and (min-width: 1440px){
+    .call_01 p{
+        margin: auto;
+        width: 280px;
+        height: 50px;
+        display: block;
+        margin-top: -55px;
+}
+}
+.call_02{
+    display: flex;
+    width: 100%;
+    height: 199px;
+    margin: auto;
+}
+@media only screen and (min-width: 768px){
+    .call_02{
+        margin-top:-111px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .call_02{
+        display: flex;
+        flex-flow: row;
+        height: 199px;
+}
+}
+
+.call_02 form{
+    display: block;
+    margin: auto;
+    margin-top: -39px;
+}
+@media only screen and (min-width: 768px){
+    .call_02 form{
+        margin-top:23px;
+}
+}
+@media only screen and (min-width: 1440px){
+    .call_02 form{
+        margin-top:11px;
+    }
+}
+.call_02 input {
+    display:block;
+    margin:auto;
+    width: 243px;
+    height: 49px;
+    border:0;
+    margin-top: 17px;
+    font-size: 17px;
+    font-family: Bebas;
+    position: relative;
+    background-color: white;
+    border-radius: 40px;
+    text-align: center;
+}
+.input01{
+    position: relative;
+    width: 221px;
+}
+.submit01{
+    background-color:#BC4830;
+    border-radius: 40px;
+    height: 49px;
+    width: 243px;
+    margin: auto;
+    margin-top: 17px;
+    position: relative;
+    font-family: Bebas;
+    font-size: 19px;
+    border-width: 0px;
+    color:white;
+}
+.x{
+    size: 20px;
+    margin-top: 17px;
+    padding-left: 301px;
+    display: block;
+}
+@media only screen and (min-width: 768px){
+    .x{
+        padding-left: 455px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .x{
+        padding-left: 733px;
+    }
+}
+.close{
+    background-image: url('x.png') no-repeat;
+    cursor:pointer;
+    border: none;
+}
+.footer{
+    background-image: url("footer_mobile.png");
+    height: 321px;
+}
+.footer p{
+    font-family: Bebas;
+    font-size: 49px;
+    margin: auto;
+    display: block;
+}
+
+#block_onClick{
+    order: 6;
+    margin:auto;
+    justify-content: center;
+    width: 280px;
+    height: 400px;
+    background-color:black;
+    margin-top: -755px;
+    display: none;
+    z-index: 6;
+}
+@media only screen and (min-width: 768px){
+    #block_onClick{
+        margin-top: -555px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    #block_onClick{
+        margin-top: -700px;
+    }
+}
+#close{
+    display: block;
+    margin:auto;
+    width: 20px;
+    height: 20px;
+    margin-left: 247px;
+    margin-top: 11px;
+}
+#icon01{
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    display: block;
+    background-image: url("Icon01.png");
+    margin: auto;
+}
+.nav_dots{
+    width: 100%;
+    height: 11px;
+    display: block;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: auto;
+    justify-content: center;
+    margin-top: 33px;
+}
+.nav-dots .nav-dot {
+    justify-content: center;
+    width: 9px;
+    height: 9px;
+    margin: auto;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: white;
+    opacity: 0.5;
+}
+#img-dot-1{
+    opacity: 1;
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: white;
+    opacity: 1;
+}
+.slides{
+    display: block;
+    margin: auto;
+}
