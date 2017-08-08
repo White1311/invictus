@@ -481,6 +481,7 @@ a:active {
     margin-top: 10px;
     order: 1;
     margin-bottom: 33px;
+    font-family: Proxima;
 }
 @media only screen and (min-width: 768px){
     .header_3{
@@ -520,12 +521,18 @@ a:active {
         margin-top: 99px;
     }
 }
-
+.header_4 p{
+    display: block;
+    margin: auto;
+    margin-top: 7px;
+}
 @font-face { font-family: Bebas; src: url('BebasNeueCyrillic_1.ttf'); }
-.header{
-    opacity: 100%;
+@font-face { font-family: Proxima; src: url('ProximaNova-Light.ttf'); }
+#header{
+    opacity: 1;
     height: 950px;
     max-width: 100%;
+    background-color: #000000;
     width: 100%;
     background-image: url("back.jpg");
     background-size:cover;
@@ -535,13 +542,14 @@ a:active {
     flex-flow: column;
 }
 @media only screen and (min-width: 768px){
-    .header{
+    #header{
         background-image: url("back_t.png");
         height: 800px;
+
     }
 }
 @media only screen and (min-width: 1440px){
-    .header{
+    #header{
         height: 980px;
         background-image: url("back_desktop.png");
     }
@@ -550,7 +558,6 @@ a:active {
     max-width: 100%;
 }*/
 p {
-    font-family: Bebas;
     text-align: center;
     color: white;
 }
@@ -593,24 +600,22 @@ p {
     display: block;
     flex-wrap: wrap;
     margin: auto;
-    width: 40%;
-    font-size:22px;
+    font-size:17px;
     position: relative;
+    width: 170px;
     height: 21px;
     margin-bottom: 30px;
+    font-family: Proxima;
 }
 @media only screen and (min-width: 768px){
     .trener{
+        margin-top: 9px;
         height: 29px;
-        font-size: 29px;
+        width: 333px;
+        font-size: 21px;
         text-align: center;
         text-align: justify;
-    }
-    .trener p{
-        display: block;
-        margin:auto;
-        width: 169px;
-        margin-top: 27px;
+        margin-bottom: 0;
     }
 
 }
@@ -651,7 +656,8 @@ p {
     .circle{
         background-image: none;
         width: 150px;
-        height: 150px;
+        height: auto;
+        padding-top: 0;
     }
 }
 @media only screen and (min-width: 1440px){
@@ -694,7 +700,7 @@ p {
     flex-flow: column;
     display: flex;
     width: 50%;
-    font-family: Bebas;
+    font-family: Proxima;
     margin: auto;
     font-size:19px;
     padding: auto;
@@ -705,7 +711,7 @@ p {
     flex-flow: column;
     display: flex;
     width: 50%;
-    font-family: Bebas;
+    font-family: Proxima;
     margin: auto;
     font-size:19px;
     padding: auto;
@@ -716,7 +722,7 @@ p {
     flex-flow: column;
     display: flex;
     width: 50%;
-    font-family: Bebas;
+    font-family: Proxima;
     margin: auto;
     font-size:19px;
     padding: auto;
@@ -727,14 +733,14 @@ p {
     flex-flow: column;
     display: flex;
     width: 50%;
-    font-family: Bebas;
+    font-family: Proxima;
     margin: auto;
     font-size:19px;
     padding: auto;
     margin-top:0px;
 }
 .inline_text{
-    width: 173px;
+    width: 177px;
     display: block;
     margin:auto;
     margin-top: 17px;
@@ -744,11 +750,13 @@ p {
 @media only screen and (min-width: 768px){
     .inline_text{
         font-size: 19px;
+        width: 180px;
     }
 }
 @media only screen and (min-width: 1440px){
     .inline_text{
-        font-size: 23px;
+        width: 221px;
+        font-size: 21px;
         margin-top: 49px;
     }
 }
@@ -807,6 +815,7 @@ p {
     width: 100%;
     text-align: center;
     margin:auto;
+    margin-bottom: 0px;
     text-align: justify;
     font-family: Bebas;
     font-size: 37px;
@@ -821,13 +830,17 @@ p {
     text-align: center;
     margin:auto;
     text-align: justify;
+    margin-bottom: 0px;
 }
 .video_block_3{
     display: flex;
     flex-flow: column;
     width: 100%;
+
     text-align: center;
     margin:auto;
+    margin-top: 0;
+    margin-bottom: 0px;
     text-align: justify;
 }
 @media only screen and (min-width: 768px){
@@ -839,9 +852,9 @@ p {
 }
 @media only screen and (min-width: 1440px){
     .video_block_3{
-        margin-top: 33px;
         display: flex;
         flex-flow: row;
+        margin-top: 111px;
     }
 }
 .video_preview_m{
@@ -908,6 +921,7 @@ p {
     display: block;
     margin:auto;
     width: 230px;
+    margin-bottom: 0px;
     height: 140px;
 }
 @media only screen and (min-width: 768px){
@@ -935,6 +949,7 @@ p {
     height: 60px;
     display: block;
     margin-top: 11px;
+    margin-bottom: 0px;
 }
 .download_android{
     background-image: url("download_android.png");
@@ -945,6 +960,7 @@ p {
     height: 60px;
     display: block;
     margin-top: 19px;
+    margin-bottom: 0px;
 }
 @media only screen and (min-width: 768px){
     .download_android{
@@ -967,7 +983,7 @@ p {
 
 .line{
     width: 100%;
-    height: 107px;
+    height: 85px;
     background-color: black;
     position: relative;
 }
@@ -983,11 +999,13 @@ p {
     top: 11px;
 }
 .problems_1 p{
+    font-family: Bebas;
     margin:auto;
     width: 270px;
 }
 @media only screen and (min-width: 768px){
     .problems_1 p{
+        font-size: 39px;
         width:100%;
     }
 }
@@ -1017,7 +1035,7 @@ p {
     height: 543px;
     margin-top: 23px;
 }
-.screen img{
+.screen video{
     margin:auto;
     width: 295px;
     height: 525px;
@@ -1027,12 +1045,12 @@ p {
 }
 @media only screen and (min-width: 1440px){
     .screen{
+        margin-right: -49px;
         display: block;
     }
 }
 @media only screen and (min-width: 1440px){
-    .screen img{
-
+    .screen video{
         display: block;
     }
 }
@@ -1049,6 +1067,7 @@ p {
     width: 300px;
     display: block;
     margin: auto;
+    margin-left: 139px;
     margin-top: 17px;
     margin-bottom: 17px;
 }
@@ -1129,12 +1148,18 @@ p {
     }
 }
 .blabla{
+    margin-bottom: 0;
     display: flex;
     flex-flow: column;
     margin: auto;
+    height: auto;
+}
+.blabla p{
+    margin:auto;
+    margin-top:0;
 }
 .first{
-    height: 77px;
+    height: auto;
     width: 100%;
     display: inline-flex;
     flex-flow: row;
@@ -1145,6 +1170,8 @@ p {
     }
 }
 .first p{
+    margin-left: 0px;
+    text-align: left;
     position: relative;
     width: 215px;
     margin: auto;
@@ -1283,6 +1310,7 @@ p {
 }
 
 .call_1{
+    font-family: Bebas;
     display: block;
     margin: auto;
     position: relative;
@@ -1302,6 +1330,7 @@ p {
 }
 }
 .call_1 p{
+    font-family: Bebas;
     display: block;
     margin: auto;
     margin-top: 21px;
@@ -1381,7 +1410,7 @@ p {
 
 @media only screen and (min-width: 768px){
         .testimonials{
-            height: 666px;
+            height: 800px;
     }
 }
 .otzivy_img{
@@ -1432,23 +1461,36 @@ p {
     text-align: center;
     margin:auto;
     display: block;
+
     font-family: Bebas;
     font-size: 25px;
+
     margin-top: -33px;
-    width: 277px;
+    width: 77%;
+    height: auto;
     font-size: cover;
 }
 @media only screen and (min-width: 768px){
     .test_1 p{
-        width: 550px;
-        font-size: 25px;
-        margin-top: -89px;
+        min-width: 411px;
+        max-width: 977px;
+        font-size: 27px;
+        margin-top: -119px;
+
+    }
+}
+@media only screen and (min-width: 1100px){
+    .test_1 p{
+        min-width: 411px;
+        max-width: 977px;
+        font-size: 33px;
+        margin-top: -139px;
 
     }
 }
 @media only screen and (min-width: 1440px){
     .test_1 p{
-        width: 1000px;
+        max-width: 1333px;
         font-size: 39px;
         margin-top: -109px;
     }
@@ -1476,7 +1518,8 @@ p {
         content: url("kov_tablet.png");
         background-size:cover;
         margin-top: -199px;
-        height: 139px;
+
+        height: auto;
 
     }
 }
@@ -1487,7 +1530,7 @@ p {
         display: block;
         margin-top: -333px;
         height: 170px;
-
+        height: auto;
     }
 }
 #user_image1{
@@ -1522,14 +1565,14 @@ p {
     #user_image2{
         width: 80px;
         height: 80px;
-        content: url("Userpic2.png");
+        content: url("Userpic.png");
     }
 }
 @media only screen and (min-width: 768px){
     #user_image3{
         width: 80px;
         height: 80px;
-        content: url("Userpic3.png");
+        content: url("Userpic.png");
     }
 }
 #fb{
@@ -1647,11 +1690,26 @@ p {
 #name{
     opacity: 1;
 }
+@media only screen and (min-width: 1440px){
+    #name{
+        font-size: 17px;
+    }
+}
 #name2{
     opacity: 0.5;
 }
+@media only screen and (min-width: 1440px){
+    #name2{
+        font-size: 17px;
+    }
+}
 #name3{
     opacity: 0.5;
+}
+@media only screen and (min-width: 1440px){
+    #name3{
+        font-size: 17px;
+    }
 }
 .instructions{
     display: flex;
@@ -1660,61 +1718,80 @@ p {
     width: 100%;
     background-color: black;
 }
-@media only screen and (min-width: 768px){
-    .instructions1{
-        display: none;
-    }
-}
+
 @media only screen and (min-width: 768px){
     .instructions{
-        background-image: url("Instructions_background_tablet.png") no-repeat;
         background-size: cover;
-        height: 404px;
+        height: 515px;
     }
 }
-@media only screen and (min-width:768px){
-    .instructions{
-        height: 500px;
-    }
-}
-.shape_m{
+.firstOne{
     display: block;
-    margin: auto;
-    width: 100%;
-    height: 99px;
-    padding-top: 169px;
+height: 77px;
+background-size: cover;
+        width: 100%;
 }
+.firstOne img{
+    display: block;
+    height: 77px;
+    background-size: cover;
+    width: 100%;
+    margin-top: 239px;
+}
+.two_instructions{
+    display: block;
+    width: 77%;
+    margin:auto;
+}
+
 @media only screen and (min-width: 768px){
-    .shape_m{
-        order: 1
+    .firstOne img{
+        display: block;
         content: url("shape_tab.png");
-        padding-top: 0;
+        margin-top: 177px;
     }
 }
 @media only screen and (min-width: 1440px){
-    .shape_m{
-        order: 1;
-        content: url("shape_desktop.png");
-        padding-top: 0;
-        margin-top:0;
+    .firstOne{
+        display: block;
     }
+}
+@media only screen and (min-width: 1440px){
+    .firstOne img{
+        display: block;
+        margin-top: 177px;
+        content: url("shape_desktop.png");
+    }
+}
+@media only screen and (min-width: 1440px){
+    .instructions{
+        background-size: cover;
+        height: 605px;
+    }
+}
+
+}
+@media only screen and (min-width: 768px){
+.dev{
+    margin: auto;
+    margin-left: 0;
+    width: 50%;
+    display: block;
+}
 }
 .device{
     display: block;
     width: 120px;
     height: 280px;
     margin: auto;
-    margin-top: -247px;
 }
 @media only screen and (min-width: 768px){
     .device{
         width: 172px;
         height: 404px;
         content: url("device_tab.png");
-        order: 2
-        float: left;
-        margin-top: -69px;
-        margin-left: 33px;
+        order: 2;
+
     }
 }
 @media only screen and (min-width: 1440px){
@@ -1723,11 +1800,11 @@ p {
         content: url("device_desktop.png");
         height: 500px;
         width: 213px;
-        float: left;
-        margin-top: -93px;
-        margin-left: 255px;
-        padding-top: 0;
     }
+}
+.instruction2{
+    margin:auto;
+    display: block;
 }
 
 .instructions2 p{
@@ -1742,31 +1819,27 @@ p {
 }
 @media only screen and (min-width: 768px){
     .instructions2 p{
-        width: 445px;
         height: 50px;
-        font-size: 29px;
-        float: right;
-        margin-left: 300px;
+        width: 100%;
+        font-size: 27px;
         margin-top: -155px;
 
     }
 }
 @media only screen and (min-width: 1440px){
     .instructions2 p{
-        width: 445px;
+        width: 100%;
         height: 50px;
         font-size: 29px;
         float: right;
-        margin-left: 666px;
         margin-top: -255px;
-
     }
 }
 .instruction3 button{
     display: block;
     margin: auto;
     color: white;
-    font-size: 21px;
+    font-size: 19px;
     font-family: Bebas;
     background-color: black;
     border-color: white;
@@ -1777,19 +1850,23 @@ p {
 @media only screen and (min-width: 768px){
     .instruction3 button{
         margin-top: -89px;
-        margin-left:  411px;
     }
+}
+.instruction3 p:hover {
+    color: #BC4830;
 }
 @media only screen and (min-width: 1440px){
     .instruction3 button{
         margin-top: -169px;
-        margin-left:  750px;
     }
 }
 @media only screen and (min-width: 768px){
     .instructions1{
         display: flex;
         flex-flow: column;
+        width: 50%;
+        margin: auto;
+        margin-left: 0px;
     }
 
 }
@@ -1803,12 +1880,16 @@ p {
     .instruction3{
         display: flex;
         flex-flow: column;
-        position: static;
+        margin-top: 33px;
     }
 }
 @media only screen and (min-width: 768px){
     .width{
-        width: 70%;
+        height: auto;
+        margin:auto;
+        margin-right: 0px;
+
+        width: 50%;
         display: flex;
         flex-flow: column;
         margin-top: -69px;
@@ -1816,7 +1897,8 @@ p {
 }
 @media only screen and (min-width: 1440px){
     .width{
-        width: 70%;
+        width: 50%;
+        float: right;
         display: flex;
         flex-flow: column;
     }
@@ -1860,6 +1942,7 @@ p {
     margin: auto;
     position: relative;
     top: 21px;
+    font-family: Bebas;
     font-size: 29px;
 }
 @media only screen and (min-width: 768px){
@@ -1981,11 +2064,36 @@ p {
     border-width: 0px;
     color:white;
 }
+#popup2{
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    display: none;
+    margin-top: -81px;
+    order: 5;
+    z-index: 3;
+}
+@media only screen and (min-width: 768px){
+    #popup2{
+        margin: auto;
+        margin-top: 19px;
+}
+}
+@media only screen and (min-width: 1440px){
+    #popup2{
+        margin-top: 121px;
+
+}
+}
 #popup{
     margin: auto;
     display: none;
     margin-top: -859px;
     order: 5;
+    z-index: 3;
+    opacity: 1;
+    background-color: black;
 }
 @media only screen and (min-width: 768px){
     #popup{
@@ -2023,6 +2131,7 @@ p {
 }
 }
 .call_01{
+    font-family: Bebas;
     display: block;
     margin: auto;
     position: relative;
@@ -2031,7 +2140,7 @@ p {
 @media only screen and (min-width: 768px){
     .call_01{
         font-size: 33px;
-        top: -17px;
+        top: -55px;
 }
 }
 @media only screen and (min-width: 1440px){
@@ -2060,7 +2169,7 @@ p {
         width: 280px;
         height: 50px;
         display: block;
-        margin-top: -55px;
+        margin-top: -75px;
 }
 }
 .call_02{
@@ -2071,7 +2180,7 @@ p {
 }
 @media only screen and (min-width: 768px){
     .call_02{
-        margin-top:-111px;
+        margin-top:-173px;
     }
 }
 @media only screen and (min-width: 1440px){
@@ -2094,7 +2203,7 @@ p {
 }
 @media only screen and (min-width: 1440px){
     .call_02 form{
-        margin-top:11px;
+        margin-top:33px;
     }
 }
 .call_02 input {
@@ -2165,7 +2274,7 @@ p {
     margin:auto;
     justify-content: center;
     width: 280px;
-    height: 400px;
+    height: auto;
     background-color:black;
     margin-top: -755px;
     display: none;

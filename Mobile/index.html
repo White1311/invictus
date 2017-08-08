@@ -6,13 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 <script type="text/javascript">
     // alert("Yo White, welcome to the new age!");
 
 </script>
 </head>
 <body>
-<div class = "header">
+<div id = "header">
 
 <div>
     <div class="header_1">
@@ -34,15 +35,15 @@
             <div class = "circle">
             <a href="#" id = "icon11" onclick="showBlockUp('block_onClick');"> <img id = "icon_1" src="Icon_1.png"></a>
             </div>
-            <a href="#" onclick="showBlockUp('block_onClick');"><p class = "inline_text">СКАЧАЙ<br> ПРИЛОЖЕНИЕ</p></a>
-            <p id = "long" style="width: 191px; text-align: center; font-size: 16px; font-family: Bebas;margin: auto; display: none; margin-top: 19px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
+            <a href="#" onclick="showBlockUp('block_onClick');"><p class = "inline_text">СКАЧАЙ ПРИЛОЖЕНИЕ</p></a>
+            <p id = "long" style="width: 191px; text-align: center; font-size: 16px; font-family: Proxima;margin: auto; display: none; margin-top: 19px; margin-bottom: 25px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
         </div>
         <div id = "inline2" onmouseenter="over2();" onmouseleave ="out2();">
             <div class = "circle">
             <a href="#" id = "icon12" onclick="showBlock2Up('block_onClick');"><img id = "icon_2" src="icon_2.png"></a>
             </div>
             <a href="#" onclick="showBlock2Up('block_onClick');"><p class = "inline_text">ВЫБЕРИ ПРОГРАММУ С<br> WORKOUT WALL</p></a>
-            <p id = "long2" style="width: 191px; text-align: center; font-size: 16px; font-family: Bebas;margin: auto; display: none; margin-top: 19px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
+            <p id = "long2" style="width: 191px; text-align: center; font-size: 16px; font-family: Proxima;margin: auto; display: none; margin-top: 19px;margin-bottom: 25px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
         </div>
         </div>
         <div class="circles">
@@ -52,14 +53,14 @@
             <a href="#" id = "icon13" onclick="showBlock3Up('block_onClick');"><img id = "icon_3" src="icon_3.png"></a></div>
             </div>
             <a href="#" onclick="showBlock3Up('block_onClick');"><p class = "inline_text">НАСЛАЖДАЙСЯ<br> ТРЕНИРОВКОЙ</p></a>
-            <p id = "long3" style="width: 191px; text-align: center; font-size: 16px; font-family: Bebas;margin: auto; display: none; margin-top: 19px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
+            <p id = "long3" style="width: 191px; text-align: center; font-size: 16px; font-family: Proxima;margin: auto; display: none; margin-top: 19px;margin-bottom: 25px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
         </div>
         <div id = "inline4" onmouseenter="over4();" onmouseleave ="out4();">
             <div class = "circle">
             <a href="#" id = "icon14" onclick="showBlock4Up('block_onClick');"><img id = "icon_4" src="icon_4.png"></a>
             </div>
             <a href="#" onclick="showBlock4Up('block_onClick');"><p class = "inline_text">ОТСЛЕЖИВАЙ<br> РЕЗУЛЬТАТ</p></a>
-            <p id = "long4" style="width: 191px; text-align: center; font-size: 16px; font-family: Bebas;margin: auto; display: none; margin-top: 19px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
+            <p id = "long4" style="width: 191px; text-align: center; font-size: 16px; font-family: Proxima;margin: auto; display: none; margin-top: 19px;margin-bottom: 25px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
         </div>
         <script type="text/javascript">
         var mq = window.matchMedia("(min-width: 1440px)");
@@ -109,7 +110,7 @@
     </div>
 </div>
 <div class = "header_4">
-    <BUTTON id = "button" onclick="showPopUp('popup');">НАЧАТЬ</BUTTON>
+    <BUTTON id = "button" onclick="showPopUp('popup');"><p>НАЧАТЬ</p></BUTTON>
     </div>
 <div id="popup">
     <div class="call_popup">
@@ -122,11 +123,14 @@
         var cvr = document.getElementById("popup")
         document.getElementById("block_onClick").style.display="none"
         cvr.style.display = "block"
+        document.getElementById('header').style.opacity=0.9
+        cvr.style.opacity= 1
     }
         function closePopUp(el) {
         var cvr = document.getElementById("popup")
         cvr.style.display = "none"
         document.body.style.overflowY = "scroll"
+        document.getElementById('header').style.opacity=1
     }
     </script>
     <div class = "call_01">
@@ -136,7 +140,7 @@
         <form>
             <input class ="input01" type="text" name="field1" placeholder="Имя" />
             <input class ="input01" type="number" name="field2" placeholder="Номер" />
-            <button class = "submit01">ПОДТВЕРДИТЬ</button>
+            <button class = "submit01"><p style="display: block; margin: auto;margin-top: 7px;">ПОДТВЕРДИТЬ</p></button>
         </form>
     </div>
 </div>
@@ -146,10 +150,15 @@
 <div id="block_onClick">
         <a id ="close" href="#" onclick="closeUp('block_onClick');"><img src="x.png"></a>
     <script type="text/javascript">
+var m = window.matchMedia("(max-width: 1440px)");
+        if (m.matches) {
     function showBlockUp(el) {
         var cvr = document.getElementById("block_onClick")
         document.getElementById("popup").style.display="none"
         cvr.style.display = "block"
+        document.getElementById("icon01").style.backgroundImage="url('Icon01.png')"
+        document.getElementById("h1").innerHTML = 'СКАЧАЙ ПРИЛОЖЕНИЕ'
+
     }
         function closeUp(el) {
         var cvr = document.getElementById("block_onClick")
@@ -180,9 +189,10 @@
         document.getElementById("h1").innerHTML = 'ОТСЛЕЖИВАЙ<br> РЕЗУЛЬТАТ'
 
     }
+}
     </script>
     <div id = "icon01"></div>
-    <div class = "blabla"> <h1 id = "h1" style="color: white; font-family: Bebas; font-size: 19px; display: block; justify-content: center; text-align: center; padding-top:33px; margin: auto;">СКАЧАЙ ПРИЛОЖЕНИЕ</h1><p style="width: 191px; text-align: center; font-size: 16px; font-family: Bebas;margin: auto; display: block; margin-top: 19px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p></div>
+    <div class = "blabla"> <h1 id = "h1" style="color: white; font-family: Bebas; font-size: 21px; display: block; justify-content: center; text-align: center; padding-top:33px; margin: auto;">СКАЧАЙ ПРИЛОЖЕНИЕ</h1><p style="width: 191px; text-align: center; font-size: 16px; font-family: Proxima;margin: auto; display: block; margin-top: 19px; margin-bottom: 25px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p></div>
 
 </div>
     </div>
@@ -202,12 +212,43 @@
             </video> -->
             <!-- <object class = "video_preview_m" data="https://youtu.be/T6YiBqAmsVo"> </object> -->
             <iframe class="video_preview_m" src="https://www.youtube.com/embed/T6YiBqAmsVo" frameborder="0" allowfullscreen></iframe></div>
+    <div id="popup2">
+    <div class="call_popup">
+    <div class = "x">
+        <a class="close" onclick="closePopUp2('popup2');" ><img src="x.png"></a>
+</div>
+    <script type="text/javascript">
+    function showPopUp2(el) {
+        var cvr = document.getElementById("popup2")
+        document.getElementById("block_onClick").style.display="none"
+        cvr.style.display = "block"
+    }
+    function closePopUp2(el) {
+        var cvr = document.getElementById("popup2")
+        cvr.style.display = "none"
+        document.body.style.overflowY = "scroll"
+    }
+    </script>
+    <div class = "call_01">
+        <p>НАЧНИТЕ ПРЯМО СЕЙЧАС</p>
+    </div>
+    <div class = "call_02">
+        <form>
+            <input class ="input01" type="text" name="field1" placeholder="Имя" />
+            <input class ="input01" type="number" name="field2" placeholder="Номер" />
+            <button class = "submit01"><p style="display: block; margin: auto;margin-top: 7px;">ПОДТВЕРДИТЬ</p></button>
+        </form>
+    </div>
+</div>
+
+    </div>
     </div>
      <div class = "video_block_3">
         <div class = "download">
-            <BUTTON class= "download_ios"></BUTTON>
-            <BUTTON class= "download_android"></BUTTON>
+            <BUTTON class= "download_ios" onclick="showPopUp2('popup2');"></BUTTON>
+            <BUTTON class= "download_android" onclick="showPopUp2('popup2');"></BUTTON>
             </div>
+
 </div>
 </div>
 
@@ -220,14 +261,14 @@
 
     <div class="problems_2">
         <div class = "screen">
-        <img src="screen.png">
+        <video autoplay loop><source src="video_screen.ogg" type="video/ogg"></video>
         </div>
         <div class ="content_problems">
                 <div class = "first">
                     <img class = "numbers" src="01.png">
                     <div class = "blabla">
                     <p>У МЕНЯ НЕ ХВАТАЕТ ДЕНЕГ НА ТРЕНЕРА</p>
-                    <div id = "box" style="display: none;">As I opened my eyes she turned to one of the warriors, saying, <q>He will live, O Jed." "'Tis well," replied the one so addressed, rising and approaching</q></div>
+                    <div id = "box" style="display: none; font-family: Proxima;">As I opened my eyes she turned to one of the warriors, saying, <q>He will live, O Jed." "'Tis well," replied the one so addressed, rising and approaching</q></div>
                     </div>
                     <a id="btn_toggle" onclick="showDivUp('box','btn_toggle','btn_toggle2')"><img src ="+.png"></a>
                     <a id="btn_toggle2" onclick="closeDiv('box','btn_toggle','btn_toggle2')"><img src ="-.png"></a>
@@ -238,7 +279,7 @@
                     <img class = "numbers" src="02.png">
                     <div class = "blabla">
                     <p>МОЮ ПРОГРАММУ НАПИСАЛИ ДРУЗЬЯ</p>
-                    <div id = "box2" style="display: none;">As I opened my eyes she turned to one of the warriors, saying, <q>He will live, O Jed." "'Tis well," replied the one so addressed, rising and approaching</q></div>
+                    <div id = "box2" style="display: none;font-family: Proxima;">As I opened my eyes she turned to one of the warriors, saying, <q>He will live, O Jed." "'Tis well," replied the one so addressed, rising and approaching</q></div>
                     </div>
                     <a id="btn_toggle3" onclick="showDivUp('box2','btn_toggle3','btn_toggle4')"><img src ="+.png"></a>
                     <a id="btn_toggle4" onclick="closeDiv('box2','btn_toggle3','btn_toggle4')"><img src ="-.png"></a>
@@ -248,7 +289,7 @@
                     <img class = "numbers" src="03.png">
                     <div class = "blabla">
                     <p>Я САМ ВСЕ ЗНАЮ</p>
-                    <div id = "box3" style="display: none;">lorem ipsum</div>
+                    <div id = "box3" style="display: none;font-family: Proxima;">lorem ipsum</div>
                     </div>
                     <a id="btn_toggle5" onclick="showDivUp('box3','btn_toggle5','btn_toggle6')"><img src ="+.png"></a>
                     <a id="btn_toggle6" onclick="closeDiv('box3','btn_toggle5','btn_toggle6')"><img src ="-.png"></a>
@@ -258,7 +299,7 @@
                     <img class = "numbers" src="04.png">
                     <div class = "blabla">
                     <p>Я НЕ ЗНАЮ КАК ПРАВИЛЬНО СОСТАВИТЬ ПРОГРАММУ</p>
-                    <div id = "box4" style="display: none;">lorem ipsum</div>
+                    <div id = "box4" style="display: none;font-family: Proxima;">lorem ipsum</div>
                     </div>
                     <a id="btn_toggle7" onclick="showDivUp('box4','btn_toggle7','btn_toggle8')"><img src ="+.png"></a>
                     <a id="btn_toggle8" onclick="closeDiv('box4','btn_toggle7','btn_toggle8')"><img src ="-.png"></a>
@@ -268,7 +309,7 @@
                     <img class = "numbers" src="05.png">
                     <div class = "blabla">
                     <p>Я ВСЕ ДЕЛАЮ, НО У МЕНЯ НЕТ РЕЗУЛЬТАТА</p>
-                    <div id = "box5" style="display: none;">lorem ipsum</div>
+                    <div id = "box5" style="display: none;font-family: Proxima;">lorem ipsum</div>
                     </div>
                     <a id="btn_toggle9" onclick="showDivUp('box5','btn_toggle9','btn_toggle10')"><img src ="+.png"></a>
                     <a id="btn_toggle10" onclick="closeDiv('box5','btn_toggle9','btn_toggle10')"><img src ="-.png"></a>
@@ -303,7 +344,7 @@
         <form>
             <input class ="input" type="text" name="field1" placeholder="Имя" />
             <input class ="input" type="number" name="field2" placeholder="Номер" />
-            <button class = "submit">ПОДТВЕРДИТЬ</button>
+            <button class = "submit"><p style="display: block; margin: auto;margin-top: 7px;">ПОДТВЕРДИТЬ</p></button>
         </form>
     </div>
 </div>
@@ -311,7 +352,7 @@
     <div class="test_1">
         <img  class = "otzivy_img" src="otzivy.png">
         <img class = "otzivy">
-        <p>ВЫ ПРОСТО СПАСЛИ МОЮ ЖИЗНЬ! ЭТО БЕЗУМНО УДОБНО! ОБОЖАЮ ВАШЕ ПРИЛОЖЕНИЕ!</p>
+        <p id = "comment">ВЫ ПРОСТО СПАСЛИ МОЮ ЖИЗНЬ! ЭТО БЕЗУМНО УДОБНО! ОБОЖАЮ ВАШЕ ПРИЛОЖЕНИЕ!</p>
 
     </div>
     <div class = "test_2">
@@ -361,6 +402,8 @@
             document.getElementById("img-dot-1").style.opacity = "0.5"
             document.getElementById("img-dot-2").style.opacity = "1"
             document.getElementById("img-dot-3").style.opacity = "0.5"
+            document.getElementById("comment").innerHTML= "lorem dsjbckjha scbiuakhj cgbhjl SCUYBHJS SUCGBHJK"
+
         }
         function change(){
             document.getElementById("user_image1").style.opacity = "1"
@@ -375,6 +418,7 @@
             document.getElementById("img-dot-1").style.opacity = "1"
             document.getElementById("img-dot-2").style.opacity = "0.5"
             document.getElementById("img-dot-3").style.opacity = "0.5"
+            document.getElementById("comment").innerHTML= "ВЫ ПРОСТО СПАСЛИ МОЮ ЖИЗНЬ! ЭТО БЕЗУМНО УДОБНО! ОБОЖАЮ ВАШЕ ПРИЛОЖЕНИЕ!"
         }
         function change3(){
             document.getElementById("user_image1").style.opacity = "0.5"
@@ -389,24 +433,31 @@
             document.getElementById("img-dot-1").style.opacity = "0.5"
             document.getElementById("img-dot-2").style.opacity = "0.5"
             document.getElementById("img-dot-3").style.opacity = "1"
+            document.getElementById("comment").innerHTML= "lorem dsjbckjha CUYBHJS SUCGBHJK"
+
         }
     </script>
     </div>
 </div>
 <div class="instructions">
+<div class = "firstOne">
+<img src="shape_mobile.png">
+</div>
+<div class="two_instructions">
     <div class="instructions1">
-    <img class = "shape_m" src="shape_m.png">
+    <div  class = "dev">
     <img class = "device" src="device_m.png">
+    </div>
     </div>
     <div class = "width">
     <div class = "instructions2">
     <p>НЕ ЗНАЕТЕ КАК ПОЛЬЗОВАТЬСЯ ПРИЛОЖЕНИЕМ?</p>
     </div>
     <div class = "instruction3">
-    <button>СКАЧАТЬ ИНСТРУКЦИЮ</button>
+    <button><p style="margin: auto; display: block; margin-top: 5px;">СКАЧАТЬ ИНСТРУКЦИЮ</p></button>
     </div>
     </div>
-
+</div>
 </div>
 <div class="call_to_action2">
     <div class = "together">
@@ -417,7 +468,7 @@
         <form>
             <input class ="input12" type="text" name="field1" placeholder="Имя" />
             <input class ="input12" type="number" name="field2" placeholder="Номер" />
-            <button class = "submit12">ПОДТВЕРДИТЬ</button>
+            <button class = "submit12"><p style="display: block; margin: auto;margin-top: 7px;">ПОДТВЕРДИТЬ</p></button>
         </form>
     </div>
     </div>
