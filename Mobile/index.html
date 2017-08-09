@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel = "stylesheet" type="text/css" href="style.css">
-<link href='BebasNeueCyrillic_1.ttf' rel='stylesheet' type='text/css'>
+<link rel = "stylesheet" type="text/css" href="/assets/css/style.css">
+<link href='/assets/fonts/BebasNeueCyrillic_1.ttf' rel='stylesheet' type='text/css'>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
 
 <div>
     <div class="header_1">
-    <img id = "logotype" src="images/logo.jpg">
+    <img id = "logotype" src="/assets/img/logo.jpg">
     </div>
 <div class="header_2">
     <div class = "title">
@@ -33,14 +33,14 @@
     <div class = circles>
         <div id = "inline" onmouseenter="over();" onmouseleave ="out();">
             <div class = "circle">
-            <a href="#" id = "icon11" onclick="showBlockUp('block_onClick');"> <img id = "icon_1" src="images/Icon_1.jpg"></a>
+            <a href="#" id = "icon11" onclick="showBlockUp('block_onClick');"> <img id = "icon_1" src="/assets/img/Icon_1.jpg"></a>
             </div>
             <a href="#" onclick="showBlockUp('block_onClick');"><p class = "inline_text">СКАЧАЙ ПРИЛОЖЕНИЕ</p></a>
             <p id = "long" style="width: 191px; text-align: center; font-size: 16px; font-family: Proxima;margin: auto; display: none; margin-top: 19px; margin-bottom: 25px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
         </div>
         <div id = "inline2" onmouseenter="over2();" onmouseleave ="out2();">
             <div class = "circle">
-            <a href="#" id = "icon12" onclick="showBlock2Up('block_onClick');"><img id = "icon_2" src="images/icon_2.jpg"></a>
+            <a href="#" id = "icon12" onclick="showBlock2Up('block_onClick');"><img id = "icon_2" src="/assets/img/icon_2.jpg"></a>
             </div>
             <a href="#" onclick="showBlock2Up('block_onClick');"><p class = "inline_text">ВЫБЕРИ ПРОГРАММУ С<br> WORKOUT WALL</p></a>
             <p id = "long2" style="width: 191px; text-align: center; font-size: 16px; font-family: Proxima;margin: auto; display: none; margin-top: 19px;margin-bottom: 25px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
@@ -50,14 +50,14 @@
         <div id = "inline3" onmouseenter="over3();" onmouseleave ="out3();">
             <div class = "circle">
             <div id="qw">
-            <a href="#" id = "icon13" onclick="showBlock3Up('block_onClick');"><img id = "icon_3" src="images/icon_3.jpg"></a></div>
+            <a href="#" id = "icon13" onclick="showBlock3Up('block_onClick');"><img id = "icon_3" src="/assets/img/icon_3.jpg"></a></div>
             </div>
             <a href="#" onclick="showBlock3Up('block_onClick');"><p class = "inline_text">НАСЛАЖДАЙСЯ<br> ТРЕНИРОВКОЙ</p></a>
             <p id = "long3" style="width: 191px; text-align: center; font-size: 16px; font-family: Proxima;margin: auto; display: none; margin-top: 19px;margin-bottom: 25px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
         </div>
         <div id = "inline4" onmouseenter="over4();" onmouseleave ="out4();">
             <div class = "circle">
-            <a href="#" id = "icon14" onclick="showBlock4Up('block_onClick');"><img id = "icon_4" src="images/icon_4.jpg"></a>
+            <a href="#" id = "icon14" onclick="showBlock4Up('block_onClick');"><img id = "icon_4" src="/assets/img/icon_4.jpg"></a>
             </div>
             <a href="#" onclick="showBlock4Up('block_onClick');"><p class = "inline_text">ОТСЛЕЖИВАЙ<br> РЕЗУЛЬТАТ</p></a>
             <p id = "long4" style="width: 191px; text-align: center; font-size: 16px; font-family: Proxima;margin: auto; display: none; margin-top: 19px;margin-bottom: 25px;">Для того, чтобы скачать<br> приложение вам<br> необходимо пройти по<br> ссылке, которой не<br> существует</p>
@@ -68,42 +68,42 @@
             function over(){
             document.getElementById("long").style.display="block"
             document.getElementById("inline").style.backgroundColor="black"
-            document.getElementById("icon11").innerHTML="<img  src='images/Icon01.jpg'>"
+            document.getElementById("icon11").innerHTML="<img  src='/assets/img/Icon01.jpg'>"
             }
             function out(){
             document.getElementById("long").style.display="none"
             document.getElementById("inline").style.backgroundColor="transparent"
-            document.getElementById("icon11").innerHTML="<img id = 'icon_1'  src='images/Icon_1.jpg'>"
+            document.getElementById("icon11").innerHTML="<img id = 'icon_1'  src='/assets/img/Icon_1.jpg'>"
             }
             function over2(){
             document.getElementById("long2").style.display="block"
             document.getElementById("inline2").style.backgroundColor="black"
-            document.getElementById("icon12").innerHTML="<img  src='images/Icon02.jpg'>"
+            document.getElementById("icon12").innerHTML="<img  src='/assets/img/Icon02.jpg'>"
             }
             function out2(){
             document.getElementById("long2").style.display="none"
             document.getElementById("inline2").style.backgroundColor="transparent"
-            document.getElementById("icon12").innerHTML="<img id = 'icon_2'  src='images/Icon_2.jpg'>"
+            document.getElementById("icon12").innerHTML="<img id = 'icon_2'  src='/assets/img/Icon_2.jpg'>"
             }
             function over3(){
             document.getElementById("long3").style.display="block"
             document.getElementById("inline3").style.backgroundColor="black"
-            document.getElementById("icon13").innerHTML="<img  src='images/Icon03.jpg'>"
+            document.getElementById("icon13").innerHTML="<img  src='/assets/img/Icon03.jpg'>"
             }
             function out3(){
             document.getElementById("long3").style.display="none"
             document.getElementById("inline3").style.backgroundColor="transparent"
-            document.getElementById("icon13").innerHTML="<img id = 'icon_3'  src='images/Icon_3.jpg'>"
+            document.getElementById("icon13").innerHTML="<img id = 'icon_3'  src='/assets/img/Icon_3.jpg'>"
             }
             function over4(){
             document.getElementById("long4").style.display="block"
             document.getElementById("inline4").style.backgroundColor="black"
-            document.getElementById("icon14").innerHTML="<img  src='images/Icon04.jpg'>"
+            document.getElementById("icon14").innerHTML="<img  src='/assets/img/Icon04.jpg'>"
             }
             function out4(){
             document.getElementById("long4").style.display="none"
             document.getElementById("inline4").style.backgroundColor="transparent"
-            document.getElementById("icon14").innerHTML="<img id = 'icon_4'  src='images/Icon_4.jpg'>"
+            document.getElementById("icon14").innerHTML="<img id = 'icon_4'  src='/assets/img/Icon_4.jpg'>"
             }
     }
             </script>
@@ -115,7 +115,7 @@
 <div id="popup">
     <div class="call_popup">
     <div class = "x">
-        <a class="close" href="#" onclick="closePopUp('popup');" ><img src="images/x.jpg"></a>
+        <a class="close" href="#" onclick="closePopUp('popup');" ><img src="/assets/img/x.jpg"></a>
 </div>
     <script type="text/javascript">
 
@@ -148,7 +148,7 @@
     </div>
 
 <div id="block_onClick">
-        <a id ="close" href="#" onclick="closeUp('block_onClick');"><img src="images/x.jpg"></a>
+        <a id ="close" href="#" onclick="closeUp('block_onClick');"><img src="/assets/img/x.jpg"></a>
     <script type="text/javascript">
 var m = window.matchMedia("(max-width: 1440px)");
         if (m.matches) {
@@ -156,7 +156,7 @@ var m = window.matchMedia("(max-width: 1440px)");
         var cvr = document.getElementById("block_onClick")
         document.getElementById("popup").style.display="none"
         cvr.style.display = "block"
-        document.getElementById("icon01").style.backgroundImage="url('images/Icon01.jpg')"
+        document.getElementById("icon01").style.backgroundImage="url('/assets/img/Icon01.jpg')"
         document.getElementById("h1").innerHTML = 'СКАЧАЙ ПРИЛОЖЕНИЕ'
 
     }
@@ -168,7 +168,7 @@ var m = window.matchMedia("(max-width: 1440px)");
     function showBlock2Up(el) {
         var cvr = document.getElementById("block_onClick")
         cvr.style.display = "block"
-        document.getElementById("icon01").style.backgroundImage="url('images/Icon02.jpg')"
+        document.getElementById("icon01").style.backgroundImage="url('/assets/img/Icon02.jpg')"
         document.getElementById("popup").style.display="none"
         document.getElementById("h1").innerHTML = 'ВЫБЕРИ ПРОГРАММУ С<br> WORKOUT WALL'
 
@@ -176,7 +176,7 @@ var m = window.matchMedia("(max-width: 1440px)");
     function showBlock3Up(el) {
         var cvr = document.getElementById("block_onClick")
         cvr.style.display = "block"
-        document.getElementById("icon01").style.backgroundImage="url('images/Icon03.jpg')"
+        document.getElementById("icon01").style.backgroundImage="url('/assets/img/Icon03.jpg')"
         document.getElementById("popup").style.display="none"
         document.getElementById("h1").innerHTML = 'НАСЛАЖДАЙСЯ<br> ТРЕНИРОВКОЙ'
 
@@ -185,7 +185,7 @@ var m = window.matchMedia("(max-width: 1440px)");
         var cvr = document.getElementById("block_onClick")
         cvr.style.display = "block"
         document.getElementById("popup").style.display="none"
-        document.getElementById("icon01").style.backgroundImage="url('images/Icon04.jpg')"
+        document.getElementById("icon01").style.backgroundImage="url('/assets/img/Icon04.jpg')"
         document.getElementById("h1").innerHTML = 'ОТСЛЕЖИВАЙ<br> РЕЗУЛЬТАТ'
 
     }
@@ -215,7 +215,7 @@ var m = window.matchMedia("(max-width: 1440px)");
     <div id="popup2">
     <div class="call_popup">
     <div class = "x">
-        <a class="close" onclick="closePopUp2('popup2');" ><img src="images/x.jpg"></a>
+        <a class="close" onclick="closePopUp2('popup2');" ><img src="/assets/img/x.jpg"></a>
 </div>
     <script type="text/javascript">
     function showPopUp2(el) {
@@ -254,67 +254,67 @@ var m = window.matchMedia("(max-width: 1440px)");
 
 <div class= "block_problems">
 
-    <img  class = "line" src="images/Line.jpg">
+    <img  class = "line" src="/assets/img/Line.jpg">
     <div class="problems_1">
         <p>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</p>
     </div>
 
     <div class="problems_2">
         <div class = "screen">
-        <video autoplay loop><source src="video/video_screen.ogg" type="video/ogg"></video>
+        <video autoplay loop><source src="/assets/video/video_screen.ogg" type="video/ogg"></video>
         </div>
         <div class ="content_problems">
                 <div class = "first">
-                    <img class = "numbers" src="images/01.jpg">
+                    <img class = "numbers" src="/assets/img/01.jpg">
                     <div class = "blabla">
                     <p>У МЕНЯ НЕ ХВАТАЕТ ДЕНЕГ НА ТРЕНЕРА</p>
                     <div id = "box" style="display: none; font-family: Proxima;">As I opened my eyes she turned to one of the warriors, saying, <q>He will live, O Jed." "'Tis well," replied the one so addressed, rising and approaching</q></div>
                     </div>
-                    <a id="btn_toggle" onclick="showDivUp('box','btn_toggle','btn_toggle2')"><img src ="images/+.jpg"></a>
-                    <a id="btn_toggle2" onclick="closeDiv('box','btn_toggle','btn_toggle2')"><img src ="images/-.jpg"></a>
+                    <a id="btn_toggle" onclick="showDivUp('box','btn_toggle','btn_toggle2')"><img src ="/assets/img/+.jpg"></a>
+                    <a id="btn_toggle2" onclick="closeDiv('box','btn_toggle','btn_toggle2')"><img src ="/assets/img/-.jpg"></a>
                 </div>
-                <img class = "long_line" src="images/long_line.jpg">
+                <img class = "long_line" src="/assets/img/long_line.jpg">
 
                 <div class = "first">
-                    <img class = "numbers" src="images/02.jpg">
+                    <img class = "numbers" src="/assets/img/02.jpg">
                     <div class = "blabla">
                     <p>МОЮ ПРОГРАММУ НАПИСАЛИ ДРУЗЬЯ</p>
                     <div id = "box2" style="display: none;font-family: Proxima;">As I opened my eyes she turned to one of the warriors, saying, <q>He will live, O Jed." "'Tis well," replied the one so addressed, rising and approaching</q></div>
                     </div>
-                    <a id="btn_toggle3" onclick="showDivUp('box2','btn_toggle3','btn_toggle4')"><img src ="images/+.jpg"></a>
-                    <a id="btn_toggle4" onclick="closeDiv('box2','btn_toggle3','btn_toggle4')"><img src ="images/-.jpg"></a>
+                    <a id="btn_toggle3" onclick="showDivUp('box2','btn_toggle3','btn_toggle4')"><img src ="/assets/img/+.jpg"></a>
+                    <a id="btn_toggle4" onclick="closeDiv('box2','btn_toggle3','btn_toggle4')"><img src ="/assets/img/-.jpg"></a>
                 </div>
-                <img class = "long_line" src="images/long_line.jpg">
+                <img class = "long_line" src="/assets/img/long_line.jpg">
                 <div class = "first">
-                    <img class = "numbers" src="images/03.jpg">
+                    <img class = "numbers" src="/assets/img/03.jpg">
                     <div class = "blabla">
                     <p>Я САМ ВСЕ ЗНАЮ</p>
                     <div id = "box3" style="display: none;font-family: Proxima;">lorem ipsum</div>
                     </div>
-                    <a id="btn_toggle5" onclick="showDivUp('box3','btn_toggle5','btn_toggle6')"><img src ="images/+.jpg"></a>
-                    <a id="btn_toggle6" onclick="closeDiv('box3','btn_toggle5','btn_toggle6')"><img src ="images/-.jpg"></a>
+                    <a id="btn_toggle5" onclick="showDivUp('box3','btn_toggle5','btn_toggle6')"><img src ="/assets/img/+.jpg"></a>
+                    <a id="btn_toggle6" onclick="closeDiv('box3','btn_toggle5','btn_toggle6')"><img src ="/assets/img/-.jpg"></a>
                 </div>
-                <img class = "long_line" src="images/long_line.jpg">
+                <img class = "long_line" src="/assets/img/long_line.jpg">
                 <div class = "first">
-                    <img class = "numbers" src="images/04.jpg">
+                    <img class = "numbers" src="/assets/img/04.jpg">
                     <div class = "blabla">
                     <p>Я НЕ ЗНАЮ КАК ПРАВИЛЬНО СОСТАВИТЬ ПРОГРАММУ</p>
                     <div id = "box4" style="display: none;font-family: Proxima;">lorem ipsum</div>
                     </div>
-                    <a id="btn_toggle7" onclick="showDivUp('box4','btn_toggle7','btn_toggle8')"><img src ="images/+.jpg"></a>
-                    <a id="btn_toggle8" onclick="closeDiv('box4','btn_toggle7','btn_toggle8')"><img src ="images/-.jpg"></a>
+                    <a id="btn_toggle7" onclick="showDivUp('box4','btn_toggle7','btn_toggle8')"><img src ="/assets/img/+.jpg"></a>
+                    <a id="btn_toggle8" onclick="closeDiv('box4','btn_toggle7','btn_toggle8')"><img src ="/assets/img/-.jpg"></a>
                 </div>
-                <img class = "long_line" src="images/long_line.jpg">
+                <img class = "long_line" src="/assets/img/long_line.jpg">
                 <div class = "first">
-                    <img class = "numbers" src="images/05.jpg">
+                    <img class = "numbers" src="/assets/img/05.jpg">
                     <div class = "blabla">
                     <p>Я ВСЕ ДЕЛАЮ, НО У МЕНЯ НЕТ РЕЗУЛЬТАТА</p>
                     <div id = "box5" style="display: none;font-family: Proxima;">lorem ipsum</div>
                     </div>
-                    <a id="btn_toggle9" onclick="showDivUp('box5','btn_toggle9','btn_toggle10')"><img src ="images/+.jpg"></a>
-                    <a id="btn_toggle10" onclick="closeDiv('box5','btn_toggle9','btn_toggle10')"><img src ="images/-.jpg"></a>
+                    <a id="btn_toggle9" onclick="showDivUp('box5','btn_toggle9','btn_toggle10')"><img src ="/assets/img/+.jpg"></a>
+                    <a id="btn_toggle10" onclick="closeDiv('box5','btn_toggle9','btn_toggle10')"><img src ="/assets/img/-.jpg"></a>
                 </div>
-                <img class = "long_line" src="images/long_line.jpg">
+                <img class = "long_line" src="/assets/img/long_line.jpg">
             </div>
     </div>
 </div>
@@ -350,7 +350,7 @@ var m = window.matchMedia("(max-width: 1440px)");
 </div>
 <div class="testimonials">
     <div class="test_1">
-        <img  class = "otzivy_img" src="images/otzivy.jpg">
+        <img  class = "otzivy_img" src="/assets/img/otzivy.jpg">
         <img class = "otzivy">
         <p id = "comment">ВЫ ПРОСТО СПАСЛИ МОЮ ЖИЗНЬ! ЭТО БЕЗУМНО УДОБНО! ОБОЖАЮ ВАШЕ ПРИЛОЖЕНИЕ!</p>
 
@@ -367,24 +367,24 @@ var m = window.matchMedia("(max-width: 1440px)");
     <div class="test_3">
     <div class = "customers">
     <div id ="customer1" onclick="change();">
-    <img id = "user_image1" src="images/user_m.jpg">
+    <img id = "user_image1" src="/assets/img/user_m.jpg">
     <div class = "other">
     <p id = "name">Александр</p>
-    <img id = "fb" src="images/facebook.jpg">
+    <img id = "fb" src="/assets/img/facebook.jpg">
     </div>
     </div>
     <div id="customer2" onclick="change2();">
-    <img id = "user_image2" src="images/user_m.jpg">
+    <img id = "user_image2" src="/assets/img/user_m.jpg">
     <div class = "other">
     <p id = "name2">Александр</p>
-    <img id = "fb2" src="images/facebook.jpg">
+    <img id = "fb2" src="/assets/img/facebook.jpg">
     </div>
     </div>
     <div id ="customer3" onclick="change3();">
-    <img id = "user_image3" src="images/user_m.jpg">
+    <img id = "user_image3" src="/assets/img/user_m.jpg">
     <div class = "other">
     <p id = "name3">Александр</p>
-    <img id = "fb3" src="images/facebook.jpg">
+    <img id = "fb3" src="/assets/img/facebook.jpg">
     </div>
     </div>
     </div>
@@ -441,12 +441,12 @@ var m = window.matchMedia("(max-width: 1440px)");
 </div>
 <div class="instructions">
 <div class = "firstOne">
-<img src="images/shape_mobile.jpg">
+<img src="/assets/img/shape_mobile.jpg">
 </div>
 <div class="two_instructions">
     <div class="instructions1">
     <div  class = "dev">
-    <img class = "device" src="images/device_m.jpg">
+    <img class = "device" src="/assets/img/device_m.jpg">
     </div>
     </div>
     <div class = "width">
